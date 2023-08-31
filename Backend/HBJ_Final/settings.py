@@ -62,14 +62,12 @@ TEMPLATES = [
         },
     },
 ]
-
-
-
 # static files (CSS, JS, Image)
 
+# settings.py
+
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATICFILES_DIRS = [BASE_DIR / "static"]  # Update this path if your static files are in a different location
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media_root')
 

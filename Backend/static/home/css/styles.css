@@ -1,0 +1,831 @@
+.girl {
+  width: 95%;
+  height: 87%;
+}
+
+@media (max-width: 767px) {}
+
+.tagline {
+  font-size: 7vw;
+}
+
+/* Media query for mobile view */
+
+.explore_now_heading {
+  font-size: 2.5rem;
+}
+
+.explore {
+  margin-top: 2.5vw;
+  margin-right: 1.2vw;
+}
+
+.shop {
+  margin-top: 2.5vw;
+}
+
+h3 {
+  color: #F2644F
+}
+
+.icon_tray_items {
+  margin-top: 0.9rem;
+}
+
+
+
+
+.vector-icon2 {
+  position: absolute;
+  height: 11.25%;
+  width: 15.21%;
+  top: 88.47%;
+  right: -2.01%;
+  bottom: 0.28%;
+  left: 86.81%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.vector-icon2 {
+  height: 13.52%;
+  width: 52.85%;
+  top: 1.65%;
+  right: -5.21%;
+  bottom: 84.84%;
+  left: 52.36%;
+}
+
+.explore_last {
+  background-image: linear-gradient(#f8a093, #f0513a);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10vw;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+
+.intro_div {
+  font-family: "Gilda Display";
+
+}
+
+.intro_div_para {
+  color: #2b7265;
+
+}
+
+.explore_now_btn {
+  width: 60%;
+  margin: 0 60px;
+  color: #F2644F;
+  border-color: #F2644F;
+}
+
+.twenty_percent_bold {
+  font-weight: bolder
+}
+
+.search_icon {
+  margin-top: 0.625rem
+}
+
+.radiance {
+  color: #F2644F
+}
+
+.twenty_percent {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.btn-success {
+  --bs-btn-bg: #3CD774;
+}
+
+/* .whatsapp_button{
+  background-color: #3CD774;
+} */
+.twenty_percent_para {
+  font-size: 2.6rem;
+}
+
+.rating_number {
+  font-size: 51px;
+}
+
+.rating_number .below-rating {
+  font-size: 12px;
+  color: #2b7265;
+}
+
+
+.discover_heading {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+
+.vector-icon8 {
+  position: absolute;
+  width: 37.01%;
+  top: 0;
+  right: 62.99%;
+  bottom: 90.04%;
+  left: 0;
+  max-width: 80%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.new_arrivals_img {
+  width: 106%;
+}
+
+.new_arrivals_heading {
+  font-size: 2.5rem;
+}
+
+.featured_selection_img {
+  width: 90%;
+}
+
+.featured_selection_heading {
+  font-size: 2.5rem;
+}
+
+.Offers_img {
+  width: 106%;
+}
+
+.Offers_heading {
+  font-size: 2.5rem;
+}
+
+.jwellery_guides_heading {
+  font-size: 2.3rem;
+
+}
+
+.radiate2_img {
+  width: 120%;
+  height: 100%;
+
+}
+
+.jewellery_btn {
+  background-color: #F2644F;
+  padding: 10px;
+  height: 51px;
+
+}
+
+.jewellery_btn:hover {
+  background-color: #F2644F;
+  color: white;
+}
+
+.jwellery_guides_img {
+  width: 30%;
+}
+
+.rings_for_outline {
+  border: 2vw solid white;
+  padding: 7vw;
+  height: 20%;
+}
+
+.jewellery_moto {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #F2644F
+}
+
+
+
+
+
+.play_store {
+  width: 10vw;
+}
+
+.ring {
+  margin-top: 90px;
+}
+
+.radiate_img {
+  width: 31%;
+  margin-top: 20px;
+}
+
+.radiate_line {
+  font-size: 55.2px;
+  color: #725641;
+}
+
+
+
+
+
+
+
+.rectangle1,
+.rectangle2 {
+  height: 50%;
+  width: 50%;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 2vw;
+  border: solid;
+}
+
+.rectangle {
+  height: 15vw;
+}
+
+/* .jewellery_guides_button{
+  
+} */
+.taglines {
+  color: #F2644F;
+  font-size: 1.2vw;
+  font-weight: bold;
+  font-family: "Inter, sans-serif";
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 2vw;
+
+}
+
+
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+
+  .rectangle1,
+  .rectangle2 {
+    width: calc(50% - 1vw);
+  }
+}
+
+
+.three_image_imgs {
+  width: 30%;
+}
+
+.special_day_text {
+  font-weight: 700;
+  font-size: 2.9vw;
+  color: #725641;
+  margin-right: 2vw;
+}
+
+.custom-card {
+  background-color: white;
+  /* Change to ywhiteour desired background color */
+  border: none;
+  /* Remove default border */
+  border-radius: 10px;
+  /* Add rounded corners if desired */
+  overflow: hidden;
+  /* Ensure the image doesn't overflow */
+  background-image: url(/public/rectangle-18@2x.png);
+  width: 50%;
+}
+
+.four_image_div {
+  max-width: 1400px;
+  height: 40%;
+}
+
+
+
+
+
+
+
+
+
+.btn-success {
+  --bs-btn-bg: #3CD774;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Media query for mobile view */
+
+
+.explore_ranges {
+  background-image: linear-gradient(#f8a093, #f0513a);
+  border: none;
+  height: 7%;
+  width: 30%;
+}
+
+.shop_now {
+  height: 7%;
+  width: 30%;
+  background-color: #f6f1f8;
+  color: #f25740;
+  margin-right: 2vw;
+}
+
+.shop_now:hover {
+
+  background-color: #f6f1f8;
+  color: #f25740;
+}
+
+
+/* for all the images in movile view */
+
+
+.rectangles {
+  border-color: #725641;
+  border: solid #725641 2px;
+  border-radius: 10px;
+  height: 10vw;
+}
+
+.jewellery-guides-review {
+  gap: 51px;
+  margin-right: -13vw;
+  padding: 113px;
+}
+
+
+
+.card {
+  height: auto;
+  /* Adjust height as needed */
+  width: 80%;
+  margin-left: 14px;
+  display: inline-block;
+  vertical-align: top;
+  box-shadow: none;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#myCarousel {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item>div {
+    display: none;
+  }
+
+  .carousel-inner .carousel-item>div:first-child {
+    display: block;
+  }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-start,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+
+  .carousel-inner .carousel-item-right.active,
+  .carousel-inner .carousel-item-next,
+  .carousel-item-next:not(.carousel-item-start) {
+    transform: translateX(25%) !important;
+  }
+
+  .carousel-inner .carousel-item-left.active,
+  .carousel-item-prev:not(.carousel-item-end),
+  .active.carousel-item-start,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+
+  .carousel-item-next.carousel-item-start,
+  .active.carousel-item-end {
+    transform: translateX(0) !important;
+  }
+
+  .carousel-inner .carousel-item-prev,
+  .carousel-item-prev:not(.carousel-item-end) {
+    transform: translateX(-25%) !important;
+  }
+}
+
+.review-text {
+  background-color: #f4e4e7;
+}
+
+.card-body {
+  background-color: #efecef;
+}
+
+.consumers {
+  text-align: center;
+  margin-top: 3vw;
+  font-size: 30px;
+  font-family: "Gilda Display";
+}
+
+
+.login-btn {
+
+  background-image: linear-gradient(#f8a093, #f0513a);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 20%;
+  height: 8%;
+  margin-bottom: 3vw;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .vector-icon8 {
+    display: none;
+  }
+
+  .rating_number {
+    font-size: 21px;
+  }
+
+  .card {
+    margin-left: 54px;
+
+  }
+}
+
+@media (max-width: 767px) {
+
+
+  .girl_div {
+    margin-top: 11vw;
+  }
+
+  .rectangle_button {
+    width: 90px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+
+  .featured_selection_img {
+    width: 90%;
+  }
+
+  .rectangles {
+    height: 28vw;
+  }
+
+  .taglines {
+    font-size: 15px;
+  }
+
+  .normal-heading {
+    font-size: 22px;
+  }
+}
+
+.above_footer {
+  background-color: #efecf0;
+}
+
+.ring-images {
+  margin-top: 3px;
+  width: 13vw;
+  height: 17vh;
+}
+
+
+
+@media (max-width: 767px) {
+
+  .rectangle_button {
+    width: 90px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .ring-images {
+    margin-top: 11px;
+    height: 10vh;
+    width: 26vw;
+  }
+
+  .featured_selection_img {
+    width: 90%;
+  }
+
+  .rectangles {
+    height: 28vw;
+  }
+
+  .jewellery-guides-review {
+    gap: 20px;
+    margin-right: -13vw;
+    padding: 67px;
+  }
+
+  .shop_now {
+    height: 49px;
+    width: 134px;
+    background-color: #f6f1f8;
+    color: #f25740;
+    margin-right: 2vw;
+  }
+
+  .explore_ranges {
+    height: 49px;
+    width: 134px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .icon_tray {
+    justify-content: space-between;
+    /* Revert to default spacing in mobile view */
+    left: 0;
+    /* Reset left position for centering */
+    padding: 0 15px;
+    /* Add padding to both sides for better spacing */
+    top: 10px;
+    /* Adjust top spacing */
+  }
+
+  .navbar {
+    margin-left: 0;
+    /* Reset the margin for mobile screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .final_img {
+    width: 65vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .special_day_text {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+
+  .navbar {
+    margin-left: 0;
+    /* Reset the margin for mobile screens */
+  }
+
+
+
+
+  .explore_last {
+    height: 40%;
+    width: 76%;
+    padding: 7px;
+  }
+}
+
+
+.fi1 {
+  flex-basis: 40%;
+  box-sizing: border-box;
+}
+
+/* Adjust width for the other columns */
+.footer_items {
+  flex-basis: calc((100% - 40%) / 4);
+  /* 4 is the number of other columns */
+  box-sizing: border-box;
+}
+
+.footer_items h2 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.footer_items ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_items ul li {
+  margin-bottom: 10px;
+}
+
+.social_icons i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contact_info {
+  display: flex;
+  align-items: center;
+}
+
+.contact_info img {
+  margin-right: 10px;
+}
+
+
+.footer_icon {
+  width: 90%;
+}
+
+.image-flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-flex-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 1px;
+}
+
+.download {
+  text-align: center;
+  width: 18vw;
+}
+
+.footer {
+
+  justify-content: space-between;
+  padding: 100px;
+  font-family: roboto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1.6vw;
+  background-color: white;
+}
+
+.play_store {
+  width: 30vw;
+  min-width: 8vw;
+}
+
+@media (max-width: 767px) {
+  .footer .row .col-sm-12 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .fi1 .download {
+    width: 72vw;
+  }
+
+  .footer {
+    width: 112%;
+  }
+}
+
+/* navbar */
+.icon_tray_items {
+  margin-top: 0.9rem;
+}
+
+.icon_tray {
+  display: flex;
+  justify-content: center;
+  /* Center content horizontally */
+  width: 90%;
+  gap: 1.2vw;
+  margin-top: 2vh;
+}
+
+/* Media query for mobile view */
+@media (max-width: 767px) {
+  .icon_tray {
+    justify-content: space-between;
+    /* Revert to default spacing in mobile view */
+    left: 0;
+    /* Reset left position for centering */
+    padding: 0 15px;
+    /* Add padding to both sides for better spacing */
+    top: 10px;
+    /* Adjust top spacing */
+  }
+
+  .navbar {
+    margin-left: 0;
+    /* Reset the margin for mobile screens */
+  }
+  .Offers_img {
+    width: 123%;
+}
+}
+
+.pure {
+  margin-bottom: 1vw;
+  margin-top: 0;
+  color: #7C7C7C;
+  font-size: 1vw;
+  margin-top: -5px;
+}
+
+.hbp {
+  font-size: 1.2vw;
+  color: #f25740;
+  margin-bottom: 0;
+}
+
+.tower {
+  width: 2.5vw;
+  margin-bottom: 1.2vw;
+}
+
+.navbar a:active {
+  color: #F2644F;
+  margin-top: -10px;
+}
+
+.navbar {
+  margin-left: 55%;
+}
+
+@media (min-width: 992px) {
+  .heading {
+    margin: 0 200px;
+    /* Apply margin only for computer views */
+  }
+}
+
+body {
+  font-family: lato;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f1f8;
+  overflow-x: hidden;
+}
+
+
+.download {
+  text-align: center;
+  width: 18vw;
+}
+
+.nbar {
+  display: flex;
+  margin-bottom: 2.9vw;
+  margin-right: 190px;
+  gap: 1.2vw;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-success {
+  --bs-btn-bg: #3CD774;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Media query for mobile view */
+
+@media (max-width: 767px) {
+  .footer .row .col-sm-12 {
+    text-align: center;
+  }
+
+  .navbar {
+    margin-left: 0;
+    /* Reset the margin for mobile screens */
+  }
+
+  .fi1 .download {
+    width: 72vw;
+  }
+}

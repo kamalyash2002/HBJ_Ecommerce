@@ -1,0 +1,462 @@
+.side-menu {
+    width: 250px;
+    background-color: white;
+    padding: 2vw;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    gap: 30vw;
+  }
+  
+  .menu {
+    background-color: white;
+    width: 20%;
+    padding: 2%;
+    height: 40%;
+  }
+  
+  .menu-heading {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .checkbox-container {
+    display: block;
+    margin: 2rem;
+    position: relative;
+    cursor: pointer;
+    padding: 0.4rem;
+  }
+  
+  .checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.8vw;
+    width: 0.8vw;
+    background-color: white;
+    border: solid 0.1px #716464;
+  }
+  
+  .checkbox-container:hover input~.checkmark {
+    background-color: #bbb;
+  }
+  
+  .checkbox-container input:checked~.checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox-container input:checked~.checkmark:after {
+    display: block;
+  }
+  
+  .checkbox-container .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid blue;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .menu_sideproducts {
+    display: flex;
+  }
+  
+  
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+  
+  }
+  
+  
+  
+  .card {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+    border-color: white;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .new_price {
+    text-align: start;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Poppins";
+  }
+  
+  .old_price {
+    color: #9E9B9B;
+  }
+  
+  .details {
+    display: flex;
+    gap: 2vw
+  }
+  
+  .percent_off {
+    color: #F2644F;
+  }
+  
+  .wishlist-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .wishlist-heart::before {
+    content: "";
+    width: 23px;
+    height: 20px;
+    background-size: cover;
+  }
+  
+  
+  .heart {
+    height: 40px;
+    width: 40px;
+  }
+  
+  /* .image_item{
+      width: 60%;
+      height: 40%;
+  
+    } */
+  .sideproducts {
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 8%;
+  }
+  
+  .price_detail {
+    text-align: start;
+  }
+  
+  .form-check-label {
+    margin: 1.0vw;
+  }
+  
+  .form-check {
+    margin-bottom: 0.11rem;
+  }
+  
+  .form-check-input:checked {
+    background-color: white;
+    /* Change the background color when checked */
+    border-color: grey;
+    /* Change the border color when checked */
+  }
+  
+  .form-check-input:checked+.form-check-label {
+    color: grey;
+    /* Change the label color when checkbox is checked */
+  }
+  
+  h5 {
+    font-size: 1.2vw;
+  }
+  
+  form {
+    margin-left: 6%;
+  
+  }
+  
+  /* navbar */
+  .icon_tray_items {
+    margin-top: 0.9rem;
+  }
+  
+  .icon_tray {
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    width: 90%;
+    gap: 1.2vw;
+    margin-top: 2vh;
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 767px) {
+    .icon_tray {
+      justify-content: space-between;
+      /* Revert to default spacing in mobile view */
+      left: 0;
+      /* Reset left position for centering */
+      padding: 0 15px;
+      /* Add padding to both sides for better spacing */
+      top: 10px;
+      /* Adjust top spacing */
+    }
+  
+    .navbar {
+      margin-left: 0;
+      /* Reset the margin for mobile screens */
+    }
+  }
+  
+  .pure {
+    margin-bottom: 1vw;
+    margin-top: 0;
+    color: #7C7C7C;
+    font-size: 1vw;
+    margin-top: -5px;
+  }
+  
+  .hbp {
+    font-size: 1.2vw;
+    color: #f25740;
+    margin-bottom: 0;
+  }
+  
+  .tower {
+    width: 2.5vw;
+    margin-bottom: 1.2vw;
+  }
+  
+  .navbar a:active {
+    color: #F2644F;
+    margin-top: -10px;
+  }
+  
+  .navbar {
+    margin-left: 55%;
+  }
+  
+  @media (min-width: 992px) {
+    .heading {
+      margin: 0 200px;
+      /* Apply margin only for computer views */
+    }
+  }
+  
+  body {
+    font-family: lato;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+  }
+  
+  
+  .download {
+    text-align: center;
+    width: 18vw;
+  }
+  
+  .nbar {
+    display: flex;
+    margin-bottom: 2.9vw;
+    margin-right: 190px;
+    gap: 1.2vw;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-success {
+    --bs-btn-bg: #3CD774;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Media query for mobile view */
+  
+  @media (max-width: 767px) {
+    .footer .row .col-sm-12 {
+      text-align: center;
+    }
+  
+    .navbar {
+      margin-left: 0;
+      /* Reset the margin for mobile screens */
+    }
+  
+    .fi1 .download {
+      width: 72vw;
+    }
+  }
+  
+  
+  .fi1 {
+    flex-basis: 40%;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust width for the other columns */
+  .footer_items {
+    flex-basis: calc((100% - 40%) / 4);
+    /* 4 is the number of other columns */
+    box-sizing: border-box;
+  }
+  
+  .footer_items h2 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .footer_items ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer_items ul li {
+    margin-bottom: 10px;
+  }
+  
+  .social_icons i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact_info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact_info img {
+    margin-right: 10px;
+  }
+  
+  
+  .footer_icon {
+    width: 90%;
+  }
+  
+  .image-flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .download {
+    text-align: center;
+    width: 18vw;
+  }
+  
+  .footer {
+  
+    justify-content: space-between;
+    padding: 100px;
+    font-family: roboto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.6vw;
+    background-color: white;
+  }
+  
+  .play_store {
+    width: 30vw;
+    min-width: 8vw;
+  }
+  
+  @media (max-width: 767px) {
+    .footer .row .col-sm-12 {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .fi1 .download {
+      width: 72vw;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .menu_sideproducts {
+      flex-direction: column;
+    }
+  
+    .menu {
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .sideproducts {
+      width: 100%;
+      margin: 0;
+    }
+  
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .product-row {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+    }
+  
+    .input-group-prepend {
+      margin: 0 auto;
+    }
+  
+    /* Additional styling as needed for responsiveness */
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .first_row {
+    margin-top: 3vw;
+    /* margin-right: 3vw; */
+  }
+  
+  .card {
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-width: var(--bs-border-width);
+  }
+  
+  .form-check-input[type=checkbox] {
+    border-radius: 0.25em;
+    margin-top: 1.3vw;
+  }

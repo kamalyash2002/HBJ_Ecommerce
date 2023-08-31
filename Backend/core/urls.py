@@ -1,5 +1,6 @@
 from django.urls import path
-
+from django.conf.urls.static import static
+from django.conf import settings
 from .views import (
     ItemDetailView,
     HomeView,
@@ -14,6 +15,9 @@ from .views import (
     RequestRefundView,
     CategoryView,
     Aboutview,
+    Contactview,
+    profile_view,
+    login,
 )
 from . import views
 
@@ -34,4 +38,8 @@ urlpatterns = [
     path('payment/<payment_option>/', PaymentView.as_view(), name='payment'),
     path('request-refund/', RequestRefundView.as_view(), name='request-refund'),
     path('about/', Aboutview.as_view(), name='about'),
-]
+    path('contact',Contactview.as_view(), name='contact'),
+    path('profile/',views.profile_view, name = 'profile'),
+    path('account/login', views.login, name = "login"),
+] 
+

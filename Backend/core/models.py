@@ -38,7 +38,6 @@ class Category(models.Model):
     title = models.CharField(max_length=100)
     slug = models.SlugField()
     description = models.TextField()
-    image = models.ImageField()
     is_active = models.BooleanField(default=True)
 
     def __str__(self):
@@ -62,6 +61,17 @@ class Item(models.Model):
     description_long = models.TextField()
     image = models.ImageField()
     is_active = models.BooleanField(default=True)
+    rating = models.FloatField(blank=True, null=True)
+    recommendation  = models.FloatField(blank=True, null=True)
+    # product specifications
+    material = models.CharField(max_length=100,blank=True, null=True)
+    gemstone = models.CharField(max_length=100,blank=True, null=True)
+    weight = models.FloatField(blank=True, null=True)
+    silver_sterling = models.FloatField(blank=True, null=True)
+    benefits = models.CharField(max_length=2000,blank=True, null=True)
+    product_details =  models.CharField(max_length=2000,blank=True, null=True)
+    more_details =  models.CharField(max_length=2000,blank=True, null=True)
+
 
     def __str__(self):
         return self.title
@@ -153,11 +163,16 @@ class Order(models.Model):
 class BillingAddress(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL,
                              on_delete=models.CASCADE)
+    first_name = models.CharField(max_length=100,blank=True,null=True)
+    last_name = models.CharField(max_length=100,blank=True,null=True)
     street_address = models.CharField(max_length=100)
     apartment_address = models.CharField(max_length=100)
-    country = CountryField(multiple=False)
+    city = models.CharField(max_length=100,null=True)
+    country = CountryField(multiple=False, null=True)
     zip = models.CharField(max_length=100)
     address_type = models.CharField(max_length=1, choices=ADDRESS_CHOICES)
+    phone_no =  models.CharField(max_length=10,null=True)
+    email = models.EmailField(null=True)
     default = models.BooleanField(default=False)
 
     def __str__(self):

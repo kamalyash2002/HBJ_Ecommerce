@@ -1,0 +1,503 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.girl {
+  width: 100%;
+  height: 90%;
+}
+
+.explore_now_heading {
+  font-size: 2.5rem;
+}
+
+.explore {
+  margin-top: 2.5vw;
+  margin-right: 1.2vw;
+}
+
+.shop {
+  margin-top: 2.5vw;
+}
+
+h3 {
+  color: #F2644F
+}
+
+.icon_tray_items {
+  margin-top: 0.9rem;
+}
+
+.first_navbar {
+  background-color: #f0f0f0 !important;
+}
+
+.tower {
+  width: 5%;
+}
+
+.vector-icon2 {
+  position: absolute;
+  height: 11.25%;
+  width: 15.21%;
+  top: 88.47%;
+  right: -2.01%;
+  bottom: 0.28%;
+  left: 86.81%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.vector-icon2 {
+  height: 13.52%;
+  width: 52.85%;
+  top: 1.65%;
+  right: -5.21%;
+  bottom: 84.84%;
+  left: 52.36%;
+}
+
+.nbar {
+  display: flex;
+  margin-bottom: 2.9VW;
+  /* justify-content: center; */
+  margin-right: 190px;
+  gap: 1.2vw;
+}
+
+/* .navbar_items {
+  font-weight: bold;
+} */
+
+.icon_tray {
+  display: flex;
+  gap: 30px
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+.main_icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pure {
+  margin-bottom: 110px;
+  margin-top: 0;
+}
+
+.hbp {
+  font-size: 22;
+}
+
+
+.container {
+  width: 100%;
+  /* Adjust this to control the width of your content */
+  max-width: 1300px;
+  /* Set a maximum width for larger screens */
+  padding: 20px;
+  max-height: 100%;
+  /* Add some padding around your content */
+  font-family: "Gilda Display";
+}
+
+.intro_div {
+  font-family: "Gilda Display";
+
+}
+
+.intro_div_para {
+  color: #2b7265;
+}
+
+.explore_now_btn {
+  width: 60%;
+  margin: 0 60px;
+  color: #F2644F;
+  border-color: #F2644F;
+}
+
+.twenty_percent_bold {
+  font-weight: bolder
+}
+
+.hbp {
+  color: #F2644F;
+  align-items: center;
+}
+
+.search_icon {
+  margin-top: 0.625rem
+}
+
+.radiance {
+  color: #F2644F
+}
+
+.twenty_percent {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.btn-success {
+  --bs-btn-bg: #3CD774;
+}
+
+/* .whatsapp_button{
+  background-color: #3CD774;
+} */
+.twenty_percent_para {
+  font-size: 2.6rem;
+}
+
+.rating_number {
+  font-size: 54px;
+}
+
+.rating_number .below-rating {
+  font-size: 12px;
+  color: #2b7265;
+}
+
+.triangle {
+  width: 150%;
+  height: 90%;
+}
+
+.discover_heading {
+  font-size: 2.5rem;
+  text-align: center;
+  width: 100%;
+  /* If .discover_heading is a block-level element */
+}
+
+.vector-icon8 {
+  position: absolute;
+  width: 37.01%;
+  top: 0;
+  right: 62.99%;
+  bottom: 90.04%;
+  left: 0;
+  max-width: 80%;
+  overflow: hidden;
+  max-height: 100%;
+}
+
+.new_arrivals_img {
+  width: 106%;
+}
+
+.new_arrivals_heading {
+  font-size: 2.5rem;
+}
+
+.featured_selection_img {
+  width: 90%;
+}
+
+.featured_selection_heading {
+  font-size: 2.5rem;
+}
+
+.Offers_img {
+  width: 106%;
+}
+
+.Offers_heading {
+  font-size: 2.5rem;
+}
+
+.jwellery_guides_heading {
+  font-size: 2.3rem;
+
+}
+
+.radiate2_img {
+  width: 120%;
+  height: 100%;
+
+}
+
+.jewellery_btn {
+  background-color: #F2644F;
+  padding: 10px;
+  height: 51px;
+
+}
+
+.jewellery_btn:hover {
+  background-color: #F2644F;
+  color: white;
+}
+
+.jwellery_guides_img {
+  width: 30%;
+}
+
+.rings_for_outline {
+  border: 2vw solid white;
+  padding: 7vw;
+  height: 20%;
+}
+
+.jewellery_moto {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #F2644F
+}
+
+
+.footer {
+
+  justify-content: space-between;
+  padding: 100px;
+  font-family: roboto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 60px;
+  background-color: white;
+
+}
+
+/* 
+.footer_items {
+  flex: 1;
+  
+  margin: 10px;
+  
+  max-width: calc(33.33% - 20px);
+  
+} */
+
+
+.play_store {
+  width: 10vw;
+}
+
+.ring {
+  margin-top: 90px;
+}
+
+.radiate_img {
+  width: 31%;
+  margin-top: 20px;
+}
+
+.radiate_line {
+  font-size: 55.2px;
+  color: #725641;
+}
+
+
+
+/* Adjust width for the first column */
+.fi1 {
+  flex-basis: 40%;
+  box-sizing: border-box;
+}
+
+/* Adjust width for the other columns */
+.footer_items {
+  flex-basis: calc((100% - 40%) / 4);
+  /* 4 is the number of other columns */
+  box-sizing: border-box;
+}
+
+.footer_items h2 {
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.footer_items ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer_items ul li {
+  margin-bottom: 10px;
+}
+
+.social_icons i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.contact_info {
+  display: flex;
+  align-items: center;
+}
+
+.contact_info img {
+  margin-right: 10px;
+}
+
+
+.footer_icon {
+  width: 90%;
+}
+
+.image-flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-flex-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 1px;
+}
+
+.download {
+  text-align: center;
+  width: 18vw;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+.card {
+  width: 100%;
+  text-align: start;
+  padding: 4vw;
+  border-color: #f4e4e7;
+  background-color: #f0f0f0;
+  ;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  object-fit: cover;
+
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  padding: 10px;
+
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  transition: background-color 0.2s;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.login-btn {
+
+  background-image: linear-gradient(#f8a093, #f0513a);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 20%;
+  height: 10%;
+  margin-bottom: 3vw;
+}
+
+.rectangle1 {
+  height: 70%;
+  width: 50%;
+  background-image: url(/public/Rectangle\ 34624232.png);
+  background-repeat: no-repeat;
+}
+
+.rectangle2 {
+  height: 70%;
+  width: 50%;
+  background-image: url(/public/Rectangle\ 34624232_2.png);
+  background-repeat: no-repeat;
+}
+
+.jewellery_guides_review {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2vw;
+
+}
+
+.taglines {
+  color: #F2644F;
+  font-size: 1.5vw;
+  font-weight: bold;
+  font-family: "Inter,sans-serif";
+  margin-left: 1vw;
+  margin-top: 1vw;
+}
+
+.ring_images {
+  width: 38%;
+
+
+}
+
+.three_image_imgs {
+  width: 33%;
+}
+
+.special_day_text {
+  font-weight: 700;
+  font-size: 2vw;
+  color: #725641;
+  margin-right: 2vw;
+}
+
+.custom-card {
+  background-color: white;
+  /* Change to ywhiteour desired background color */
+  border: none;
+  /* Remove default border */
+  border-radius: 10px;
+  /* Add rounded corners if desired */
+  overflow: hidden;
+  /* Ensure the image doesn't overflow */
+  background-image: url(/public/rectangle-18@2x.png);
+  width: 50%;
+}
+
+.four_image_div {
+  max-width: 1400px;
+}

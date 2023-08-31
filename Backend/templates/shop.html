@@ -1,0 +1,358 @@
+{% load static %}
+{% load category_template_tags %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'shop/css/style.css'%}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Side Menu</title>
+</head>
+
+<body>
+
+
+
+    <div class="row">
+        <div class="col-md-8 text-center">
+            <div class="row">
+                <div class="heading">
+                    <p class="hbp">HBP JEWELS</p>
+                    <div class="tower_para">
+                        HAUTE BIJOUX <img src="{% static 'shop/public/1noDePS-600x600 2.png' %}" alt="" class="tower">
+						BY
+                        PRIANCA
+                    </div>
+                    <p class="pure">Pure 92.5 Silver and Semi Precious Gemstones Jewellery</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="nbar" style="font-size: bold;">
+                    <nav class="navbar navbar-expand-lg" style="width: 100%;">
+                        <div class="container-fluid">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav navbar_items" style="display: flex;
+                                 width: 100%;font-weight: 600;font-size: 100%;">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/about">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/shop">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="icon_tray">
+                <a class="nav-link icon_tray_items" href="#">
+                    <button type="button" class="btn btn-success whatsapp_button" style="background-color: #1FAF38; ">
+                        <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                    </button>
+                </a>
+                <a class="nav-link icon_tray_items" href="#"><i class="fa-regular fa-heart"></i></a>
+                <a class="nav-link icon_tray_items" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="nav-link icon_tray_items" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="nav-link icon_tray_items" href="#"><i class="fa-regular fa-user"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="menu_sideproducts">
+        <div class="menu">
+            <form>
+                <h4>Filters</h4>
+
+                <h5>Categories</h5>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="earrings">
+                    <label class="form-check-label" for="earrings">Earrings</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="necklaces">
+                    <label class="form-check-label" for="necklaces">Necklaces</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="pendants">
+                    <label class="form-check-label" for="pendants">Pendants</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="bracelets">
+                    <label class="form-check-label" for="bracelets">Bracelets</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="anklets">
+                    <label class="form-check-label" for="anklets">Anklets</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="full-neckwear">
+                    <label class="form-check-label" for="full-neckwear">Full Neckwear</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="watches">
+                    <label class="form-check-label" for="watches">Watches</label>
+                </div>
+
+                <h5>Prices</h5>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="price-500-1000">
+                    <label class="form-check-label" for="price-500-1000">Rs 500 - Rs 1000</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="price-1000-2000">
+                    <label class="form-check-label" for="price-1000-2000">Rs 1000 - Rs 2000</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="price-2000-3000">
+                    <label class="form-check-label" for="price-2000-3000">Rs 2000 - Rs 3000</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="price-3000-4000">
+                    <label class="form-check-label" for="price-3000-4000">Rs 3000 - Rs 4000</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="price-4000-5000">
+                    <label class="form-check-label" for="price-4000-5000">Rs 4000 - Rs 5000</label>
+                </div>
+
+                <h5>Offers Range</h5>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="offer-10">
+                    <label class="form-check-label" for="offer-10">Min 10% off</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="offer-15">
+                    <label class="form-check-label" for="offer-15">Min 15% off</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="offer-20">
+                    <label class="form-check-label" for="offer-20">Min 20% off</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="offer-25">
+                    <label class="form-check-label" for="offer-25">Min 25% off</label>
+                </div>
+            </form>
+        </div>
+        <div class="sideproducts">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+                <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <div class="first_row" style="display: flex; ">
+				{% for item in object_list %}
+					<div class="card">
+						<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
+						<img src="{{ item.image.url }}" alt="Product 4" class="image_item">
+						<a href="{{item.get_absolute_url}}">
+							<p class="price_detail">{{item.title}}</p>
+						</a>
+						<div class="details">
+						<div class="new_price">${{item.discount_price}}</div>
+						<div class="old_price"><s>${{item.price}}</s></div>
+						<div class="percent_off">25% off</div>
+						</div>
+					</div>	
+				{% endfor %}
+                
+				
+            </div>
+            <div class="first_row" style="display: flex; ">
+                <div class="card">
+					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
+					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
+					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
+					<div class="details">
+						<div class="new_price">$150</div>
+						<div class="old_price"><s>$200</s></div>
+						<div class="percent_off">25% off</div>
+					</div>
+				</div>	
+				
+                <div class="card">
+					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
+					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
+					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
+					<div class="details">
+						<div class="new_price">$150</div>
+						<div class="old_price"><s>$200</s></div>
+						<div class="percent_off">25% off</div>
+					</div>
+				</div>	
+				
+				<div class="card">
+					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
+					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
+					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
+					<div class="details">
+						<div class="new_price">$150</div>
+						<div class="old_price"><s>$200</s></div>
+						<div class="percent_off">25% off</div>
+					</div>
+				</div>	
+				
+            </div>
+            <div class="first_row" style="display: flex; ">
+                <div class="card">
+					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
+					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
+					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
+					<div class="details">
+						<div class="new_price">$150</div>
+						<div class="old_price"><s>$200</s></div>
+						<div class="percent_off">25% off</div>
+					</div>
+				</div>	
+				
+				<div class="card">
+					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
+					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
+					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
+					<div class="details">
+						<div class="new_price">$150</div>
+						<div class="old_price"><s>$200</s></div>
+						<div class="percent_off">25% off</div>
+					</div>
+				</div>	
+				
+                <div class="card">
+					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
+					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
+					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
+					<div class="details">
+						<div class="new_price">$150</div>
+						<div class="old_price"><s>$200</s></div>
+						<div class="percent_off">25% off</div>
+					</div>
+				</div>	
+				
+            </div>
+            <div class="first_row" style="display: flex; ">
+				<div class="card">
+					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
+					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
+					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
+					<div class="details">
+						<div class="new_price">$150</div>
+						<div class="old_price"><s>$200</s></div>
+						<div class="percent_off">25% off</div>
+					</div>
+				</div>	
+				
+                <div class="card">
+					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
+					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
+					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
+					<div class="details">
+						<div class="new_price">$150</div>
+						<div class="old_price"><s>$200</s></div>
+						<div class="percent_off">25% off</div>
+					</div>
+				</div>	
+				
+                <div class="card">
+					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
+					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
+					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
+					<div class="details">
+						<div class="new_price">$150</div>
+						<div class="old_price"><s>$200</s></div>
+						<div class="percent_off">25% off</div>
+					</div>
+				</div>	
+				
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <div class="footer" style="margin-top: 1vw;">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 col-sm-12">
+                        <div class="footer_items fi1">
+                            <img src="/public/1nodeps600x600-3@2x.png" alt="" class="footer_icon"><br>
+                            <p class="download">Download the app by clicking the link below :</p>
+                            <div class="image-flex-container">
+                                <img src="/public/image-1@2x.png" alt="" class="play_store">
+                                <img src="/public/image-2@2x.png" alt="" class="play_store">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-sm-12">
+                        <div class="footer_items fi2">
+                            <h2>Products</h2>
+                            <ul>
+                                <li>Rings</li>
+                                <li>Bracelets</li>
+                                <li>Earrings</li>
+                                <li>Pendant</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 col-sm-12">
+                        <div class="footer_items fi3">
+                            <h2>Information</h2>
+                            <ul>
+                                <li>About us</li>
+                                <li>Our Products</li>
+                                <li>Collection</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2 col-sm-12">
+                        <div class="footer_items fi4">
+                            <h2>Contact</h2>
+                            <p><i class="fa-solid fa-phone"></i>(406) 555-0120</p>
+                            <p><img src="/public/dashiconsemail.svg" alt=""> Silverjewel123@gmail.com</p>
+                            <p><img src="/public/frame-3.svg" alt=""> 2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2 col-sm-12">
+                        <div class="footer_items social_icons fi5">
+                            <h2>Social Media</h2>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/40d666c88a.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

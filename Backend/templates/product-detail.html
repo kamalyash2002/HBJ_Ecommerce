@@ -1,0 +1,667 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'product_details/css/global.css'%}" />
+    <link rel="stylesheet" href="{% static 'product_details/css/reviews-page.css'%}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Gilda Display:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Marmelad:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Serif Display:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="reviews-page">
+      <img class="vector-icon6" alt="" src="static/product_details/public/vector5.svg" />
+
+      <div class="reviews-page-child"></div>
+      <img class="vector-icon7" alt="" src="static/product_details/public/vector3.svg" />
+
+      <img class="vector-icon8" alt="" src="static/product_details/public/vector4.svg" />
+
+      <img class="vector-icon9" alt="" src="static/product_details/public/vector4.svg" />
+
+      <div class="product-durability1"></div>
+      <img class="vector-icon10" alt="" src="static/product_details/public/vector6.svg" />
+
+      <img class="vector-icon11" alt="" src="static/product_details/public/vector7.svg" />
+
+      <div class="div14">
+        <div class="products-group">
+          <b class="products1">Products</b>
+          <div class="rings-bracelets-earrings-pe1">
+            <p class="rings1">Rings</p>
+            <p class="rings1">&nbsp;</p>
+            <p class="rings1">Bracelets</p>
+            <p class="rings1">&nbsp;</p>
+            <p class="rings1">Earrings</p>
+            <p class="rings1">&nbsp;</p>
+            <p class="pendant1">Pendant</p>
+          </div>
+        </div>
+        <div class="information-group">
+          <b class="information1">Information</b>
+          <div class="about-us2">About Us</div>
+          <div class="our-produts1">Our Produts</div>
+          <div class="collection1">Collection</div>
+        </div>
+        <div class="contact-group">
+          <b class="information1">Contact</b>
+          <div class="group">
+            <div class="div15">(406) 555-0120</div>
+            <img class="group-child30" alt="" src="static/product_details/public/frame-11.svg" />
+          </div>
+          <div class="group-child31"></div>
+          <div class="westheimer-rd-santa-ana-illi-group">
+            <div class="westheimer-rd-santa1">
+              2972 Westheimer Rd. Santa Ana, Illinois 85486
+            </div>
+            <img class="group-child30" alt="" src="static/product_details/public/frame-31.svg" />
+          </div>
+          <div class="silverjewel123gmailcom-group">
+            <div class="div15">Silverjewel123@gmail.com</div>
+            <img
+              class="group-child30"
+              alt=""
+              src="static/product_details/public/dashiconsemail1.svg"
+            />
+          </div>
+        </div>
+        <div class="download-the-app-by-clicking-t-group">
+          <div class="download-the-app1">
+            Download the app by clicking the link below :
+          </div>
+          <img class="image-1-icon1" alt="" src="static/product_details/public/image-11@2x.png" />
+
+          <img class="image-2-icon1" alt="" src="static/product_details/public/image-21@2x.png" />
+        </div>
+        <div class="group-parent22">
+          <img class="group-child33" alt="" src="static/product_details/public/group-20171.svg" />
+
+          <b class="products1">Social media</b>
+        </div>
+        <img
+          class="nodeps-600x600-3-icon1"
+          alt=""
+          src="static/product_details/public/1nodeps600x600-31@2x.png"
+        />
+      </div>
+      <div class="frame-parent1">
+        <div class="rectangle-parent10">
+          <img class="frame-child" alt="" src="static/product_details/public/rectangle-6@2x.png" />
+
+          <img class="frame-child" alt="" src="static/product_details/public/rectangle-5@2x.png" />
+
+          <div class="rectangle-parent11">
+            <img
+              class="group-child34"
+              alt=""
+              src="static/product_details/public/rectangle-7@2x.png"
+            />
+
+            <div class="frame-wrapper">
+              <img class="chevron-right-icon" alt="" src="static/product_details/public/frame.svg" />
+            </div>
+          </div>
+          <img class="frame-child" alt="" src="static/product_details/public/rectangle-7@2x.png" />
+        </div>
+        <img class="group-child35" alt="" src="static/product_details/public/group-1410126185.svg" />
+      </div>
+      <img class="reviews-page-item" alt="" src="{{ object.image.url }}" />
+
+      <div class="group-parent23">
+        <div class="group-parent24">
+          <div class="frame-parent2">
+            <div class="frame-parent3">
+              <div class="gemstone-earrings-parent">
+                <div class="gemstone-earrings">{{ object.title }}</div>
+                <div class="classic-victorian-gemstone">
+                    {{ object.description_short }}
+                </div>
+              </div>
+              <div class="frame-parent4">
+                <div class="frame-parent5">
+                  <img
+                    class="chevron-right-icon"
+                    alt=""
+                    src="static/product_details/public/frame1.svg"
+                  />
+
+                  <div class="gemstone-earrings">109</div>
+                </div>
+                <div class="frame-frame">
+                  <img
+                    class="chevron-right-icon"
+                    alt=""
+                    src="static/product_details/public/frame2.svg"
+                  />
+                </div>
+                <div class="frame-frame">
+                  <img
+                    class="chevron-right-icon"
+                    alt=""
+                    src="static/product_details/public/frame3.svg"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="frame-parent6">
+              <div class="rs-2650-parent">
+                <b class="rs-2650">Rs {{ object.discount_price }}</b>
+                <div class="rs-3560">Rs{{ object.price }}</div>
+              </div>
+              <div class="frame-parent7">
+                <div class="frame-parent8">
+                  <div class="frame-parent9">
+                    <img class="frame-icon5" alt="" src="static/product_details/public/frame4.svg" />
+
+                    <div class="gemstone-earrings">{{ object.rating}}</div>
+                  </div>
+                  <div class="frame-parent10">
+                    <img class="frame-icon5" alt="" src="static/product_details/public/frame5.svg" />
+
+                    <div class="gemstone-earrings">67 Reviews</div>
+                  </div>
+                </div>
+                <div class="of-buyers-have-container">
+                  <span class="span">{{ object.recommendation }}%</span>
+                  <span class="of-buyers-have">
+                    of buyers have recommended this.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="want-to-customize">Want to customize ?</div>
+            <div class="frame-parent11">
+              <div class="buy-now-wrapper">
+                <div class="gemstone-earrings">Buy Now</div>
+              </div>
+              <div class="add-to-cart-wrapper">
+                <a href="{{ object.get_add_to_cart_url }}" class="btn btn-primary" style="margin: 2px;"><div class="gemstone-earrings">Add to Cart</div></a>
+				{% comment %} <a href="{{object.get_remove_from_cart_url}}" class="btn btn-outline-dark" style="margin: 2px;">Remove from Cart</a> {% endcomment %}
+                
+              </div>
+            </div>
+          </div>
+          <div class="product-specifications-parent">
+            <div class="product-specifications">Product Specifications</div>
+            <div class="group-parent25">
+              <div class="material-used-parent">
+                <div class="product-specifications">Material Used</div>
+                <div class="silver-parent">
+                  <div class="product-specifications">{{ object.material }}</div>
+                  <div class="line-div"></div>
+                </div>
+              </div>
+              <div class="weight-parent">
+                <div class="product-specifications">Weight</div>
+                <div class="silver-parent">
+                  <div class="product-specifications">{{ object.weight }} g</div>
+                  <div class="line-div"></div>
+                </div>
+              </div>
+              <div class="silver-sterling-parent">
+                <div class="product-specifications">Silver Sterling</div>
+                <div class="silver-parent">
+                  <div class="product-specifications">{{ object.silver_sterling }}</div>
+                  <div class="line-div"></div>
+                </div>
+              </div>
+              <div class="gemstone-used-parent">
+                <div class="product-specifications">Gemstone Used</div>
+                <div class="silver-parent">
+                  <div class="product-specifications">Cobalt</div>
+                  <div class="line-div"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="frame-parent12">
+          <div class="frame-parent13">
+            <img class="frame-icon7" alt="" src="static/product_details/public/frame6.svg" />
+
+            <div class="free-delivery-parent">
+              <b class="free-delivery">Free Delivery</b>
+              <div class="enter-your-postal">
+                Enter your Postal code for Delivery Availability
+              </div>
+            </div>
+          </div>
+          <div class="frame-child1"></div>
+          <div class="frame-parent13">
+            <img class="frame-icon7" alt="" src="static/product_details/public/frame7.svg" />
+
+            <div class="free-delivery-parent">
+              <b class="free-delivery">Return Delivery</b>
+              <div class="free-30-days-container">
+                Free 30 days Delivery Return.
+                <span class="details">Details</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="inset-parent">
+        <div class="inset">
+          <div class="div19">
+            <div class="child"></div>
+            <div class="info">
+              <div class="helpfull-btn">
+                <div class="replay">Replay</div>
+                <div class="like">Like</div>
+                <img
+                  class="vuesaxlinearlike-icon"
+                  alt=""
+                  src="static/product_details/public/vuesaxlinearlike.svg"
+                />
+              </div>
+              <div class="there-are-many">
+                There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by
+                injected humour
+              </div>
+              <div class="greate-product">Greate Product</div>
+              <div class="group-parent26">
+                <img class="group-child39" alt="" src="static/product_details/public/group-48.svg" />
+
+                <div class="days-ago">3 Days ago</div>
+                <div class="nicolas-cage">Nicolas cage</div>
+              </div>
+            </div>
+            <div class="info1">
+              <div class="helpfull-btn">
+                <div class="replay">Replay</div>
+                <div class="like">Like</div>
+                <img
+                  class="vuesaxlinearlike-icon"
+                  alt=""
+                  src="static/product_details/public/vuesaxlinearlike.svg"
+                />
+              </div>
+              <div class="there-are-many">
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC, making it over 2000 years old.
+              </div>
+              <div class="greate-product">The best product In Market</div>
+              <div class="group-parent27">
+                <img class="group-child39" alt="" src="static/product_details/public/group-48.svg" />
+
+                <div class="days-ago1">3 Days ago</div>
+                <div class="srrobert-downey">Sr.Robert Downey</div>
+              </div>
+            </div>
+            <div class="profile">
+              <div class="profile-child"></div>
+              <div class="at">A.T</div>
+            </div>
+            <div class="profile1">
+              <div class="profile-child"></div>
+              <div class="at">A.T</div>
+            </div>
+          </div>
+          <div class="view-all-reviews">View All Reviews</div>
+        </div>
+        <div class="reviews1">Reviews</div>
+      </div>
+      <div class="rectangle-parent12">
+        <div class="group-child41"></div>
+        <div class="group-child42"></div>
+        <div class="rectangle-parent13">
+          <div class="group-child43"></div>
+          <div class="description">Description</div>
+        </div>
+        <div class="reviews2">Reviews</div>
+      </div>
+      <div class="similar-items-you-might-also-l-parent">
+        <b class="similar-items-you">Similar Items You Might Also Like</b>
+        <div class="frame-parent15">
+          <div class="frame-parent16">
+            <div class="group-wrapper10">
+              <div class="rectangle-parent14">
+                <div class="group-child44"></div>
+                <img
+                  class="my-project-1-1"
+                  alt=""
+                  src="static/product_details/public/my-project-1-1@2x.png"
+                />
+
+                <div class="heart-wrapper11">
+                  <img class="frame-icon5" alt="" src="static/product_details/public/heart.svg" />
+                </div>
+                <div class="button">
+                  <div class="button-base">
+                    <img class="eye-icon" alt="" />
+
+                    <div class="text1">Quick View</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gemstone-925-sterling-silver-parent">
+              <div class="gemstone-925-sterling">
+                Gemstone 92.5 Sterling Silver Earring
+              </div>
+              <b class="b">₹ 675.00</b>
+              <div class="parent1">
+                <div class="div20">(121)</div>
+                <div class="star-icon-parent">
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent17">
+            <div class="group-wrapper10">
+              <div class="rectangle-parent14">
+                <div class="group-child44"></div>
+                <img
+                  class="my-project-1-1"
+                  alt=""
+                  src="static/product_details/public/my-project-1-11@2x.png"
+                />
+
+                <div class="heart-wrapper11">
+                  <img class="frame-icon5" alt="" src="static/product_details/public/heart.svg" />
+                </div>
+                <div class="button">
+                  <div class="button-base">
+                    <img class="eye-icon" alt="" />
+
+                    <div class="text1">Quick View</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pretty-egyptian-designs-earrin-parent">
+              <div class="pretty-egyptian-designs1">
+                Pretty Egyptian designs Earrings for everyday
+              </div>
+              <b class="b1">₹ 675.00</b>
+              <div class="parent2">
+                <div class="div20">(121)</div>
+                <div class="star-icon-parent">
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent18">
+            <div class="group-wrapper10">
+              <div class="rectangle-parent14">
+                <div class="group-child44"></div>
+                <img
+                  class="my-project-1-1"
+                  alt=""
+                  src="static/product_details/public/my-project-1-12@2x.png"
+                />
+
+                <div class="heart-wrapper13">
+                  <img class="frame-icon5" alt="" src="static/product_details/public/heart1.svg" />
+                </div>
+                <div class="button">
+                  <div class="button-base">
+                    <img class="eye-icon" alt="" />
+
+                    <div class="text1">Quick View</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gemstone-925-sterling-silver-group">
+              <div class="gemstone-925-sterling">
+                Gemstone 92.5 Sterling Silver Earring
+              </div>
+              <b class="b">₹ 675.00</b>
+              <div class="parent1">
+                <div class="div20">(121)</div>
+                <div class="star-icon-parent">
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent19">
+            <div class="group-wrapper13">
+              <div class="rectangle-parent14">
+                <div class="group-child44"></div>
+                <img
+                  class="my-project-1-1"
+                  alt=""
+                  src="static/product_details/public/my-project-1-13@2x.png"
+                />
+
+                <div class="heart-wrapper14">
+                  <img class="frame-icon5" alt="" src="static/product_details/public/heart1.svg" />
+                </div>
+                <div class="button">
+                  <div class="button-base">
+                    <img class="eye-icon" alt="" />
+
+                    <div class="text1">Quick View</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gemstone-925-sterling-silver-container">
+              <div class="gemstone-925-sterling">
+                Gemstone 92.5 Sterling Silver Earring
+              </div>
+              <b class="b">₹ 675.00</b>
+              <div class="parent1">
+                <div class="div20">(121)</div>
+                <div class="star-icon-parent">
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent20">
+            <div class="group-wrapper10">
+              <div class="rectangle-parent14">
+                <div class="group-child44"></div>
+                <img
+                  class="my-project-1-1"
+                  alt=""
+                  src="static/product_details/public/my-project-1-14@2x.png"
+                />
+
+                <div class="heart-wrapper14">
+                  <img class="frame-icon5" alt="" src="static/product_details/public/heart1.svg" />
+                </div>
+                <div class="button">
+                  <div class="button-base">
+                    <img class="eye-icon" alt="" />
+
+                    <div class="text1">Quick View</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gemstone-925-sterling-silver-group">
+              <div class="gemstone-925-sterling">
+                Gemstone 92.5 Sterling Silver Earring
+              </div>
+              <b class="b">₹ 675.00</b>
+              <div class="parent1">
+                <div class="div20">(121)</div>
+                <div class="star-icon-parent">
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent21">
+            <div class="group-wrapper13">
+              <div class="rectangle-parent14">
+                <div class="group-child44"></div>
+                <img
+                  class="my-project-1-1"
+                  alt=""
+                  src="static/product_details/public/my-project-1-15@2x.png"
+                />
+
+                <div class="heart-wrapper14">
+                  <img class="frame-icon5" alt="" src="static/product_details/public/heart1.svg" />
+                </div>
+                <div class="button">
+                  <div class="button-base">
+                    <img class="eye-icon" alt="" />
+
+                    <div class="text1">Quick View</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gemstone-925-sterling-silver-container">
+              <div class="gemstone-925-sterling">
+                Gemstone 92.5 Sterling Silver Earring
+              </div>
+              <b class="b">₹ 675.00</b>
+              <div class="parent1">
+                <div class="div20">(121)</div>
+                <div class="star-icon-parent">
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+
+                  <img class="star-icon" alt="" src="static/product_details/public/star-icon.svg" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button6">
+            <div class="button-base6">
+              <img
+                class="chevron-right-icon"
+                alt=""
+                src="static/product_details/public/chevronright.svg"
+              />
+            </div>
+          </div>
+          <div class="button7">
+            <div class="button-base6">
+              <img
+                class="chevron-right-icon"
+                alt=""
+                src="static/product_details/public/chevronright1.svg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="group-parent28">
+        <div class="frame-parent22">
+          <div class="group-child50"></div>
+          <div class="group-parent29">
+            <img
+              class="group-child51"
+              alt=""
+              src="static/product_details/public/group-1410126120.svg"
+            />
+
+            <div class="logoswhatsapp-icon-group">
+              <img
+                class="frame-icon5"
+                alt=""
+                src="static/product_details/public/logoswhatsappicon.svg"
+              />
+
+              <div class="whatsapp1">Whatsapp</div>
+            </div>
+          </div>
+        </div>
+        <div class="group-parent30">
+          <div class="about-us-group">
+            <b class="about-us3">About us</b>
+            <b class="shop1">Shop</b>
+            <b class="contact-us1">Contact us</b>
+            <b class="products1">Home </b>
+          </div>
+          <img
+            class="nodeps-600x600-2-icon1"
+            alt=""
+            src="static/product_details/public/1nodeps600x600-3@2x.png"
+          />
+        </div>
+      </div>
+      <div class="heart-wrapper17">
+        <img class="frame-icon5" alt="" src="static/product_details/public/heart.svg" />
+      </div>
+    </div>
+  </body>
+</html>

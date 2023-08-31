@@ -1,0 +1,703 @@
+.vector-icon {
+  position: absolute;
+  height: 22.27%;
+  width: 15.23%;
+  top: 68.27%;
+  right: -0.93%;
+  bottom: 9.47%;
+  left: 85.69%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-child {
+  border-radius: var(--br-base);
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    #dfabab,
+    rgba(126, 194, 223, 0)
+  );
+}
+.group-child,
+.payment-page-inner,
+.rectangle-wrapper,
+.vector-icon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 209px;
+  height: 200px;
+}
+.payment-page-inner,
+.vector-icon1 {
+  top: 1693px;
+  left: -412px;
+}
+.vector-icon1 {
+  top: 476px;
+  left: 0;
+  width: 637.47px;
+  height: 730.25px;
+  opacity: 0.7;
+}
+.vector-icon2,
+.vector-icon3 {
+  position: absolute;
+  top: 2236px;
+  left: -203px;
+  width: 637.47px;
+  height: 542.25px;
+}
+.vector-icon3 {
+  top: 3083px;
+  left: 1034px;
+}
+.product-durability,
+.vector-icon4 {
+  position: absolute;
+  top: 3715px;
+  left: 782px;
+  width: 128px;
+  height: 128px;
+}
+.vector-icon4 {
+  height: 6.92%;
+  width: 100%;
+  top: 87.75%;
+  right: 0;
+  bottom: 5.34%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.products {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rings {
+  margin-block-start: 0;
+  margin-block-end: 24px;
+}
+.pendant {
+  margin: 0;
+}
+.products-parent,
+.rings-bracelets-earrings-pe {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  font-size: var(--title-14px-regular-size);
+}
+.products-parent {
+  top: 48px;
+  left: 554px;
+  width: 74px;
+  height: 173px;
+  font-size: var(--font-size-lg);
+}
+.about-us,
+.information {
+  position: absolute;
+  left: 0;
+}
+.information {
+  top: 0;
+  font-size: var(--font-size-lg);
+}
+.about-us {
+  top: 61px;
+}
+.collection,
+.our-produts {
+  position: absolute;
+  top: 96px;
+  left: 0;
+}
+.collection {
+  top: 128px;
+}
+.information-parent,
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 144px;
+}
+.inner {
+  top: 48px;
+  left: 714px;
+}
+.group-inner,
+.group-item,
+.parent {
+  position: absolute;
+  left: 0;
+  height: 24px;
+}
+.group-item {
+  top: 0;
+  width: 24px;
+  overflow: hidden;
+}
+.group-inner,
+.parent {
+  top: 61px;
+  width: 136px;
+}
+.group-inner {
+  top: 100px;
+  width: 24px;
+  overflow: hidden;
+}
+.westheimer-rd-santa {
+  position: absolute;
+  top: 3px;
+  left: 40px;
+  line-height: 24px;
+  display: inline-block;
+  width: 208px;
+}
+.westheimer-rd-santa-ana-illi-parent {
+  position: absolute;
+  top: 141px;
+  left: 0;
+  width: 248px;
+  height: 51px;
+}
+.silverjewel123gmailcom {
+  position: absolute;
+  top: 4px;
+  left: 40px;
+}
+.contact-parent,
+.silverjewel123gmailcom-parent {
+  position: absolute;
+  top: 101px;
+  left: 0;
+  width: 209px;
+  height: 24px;
+}
+.contact-parent {
+  top: 48px;
+  left: 874px;
+  width: 248px;
+  height: 192px;
+}
+.download-the-app {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  line-height: 24px;
+}
+.image-1-icon,
+.image-2-icon {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  width: 136px;
+  height: 41px;
+  object-fit: cover;
+}
+.image-2-icon {
+  left: 160px;
+}
+.download-the-app-by-clicking-t-parent {
+  position: absolute;
+  top: 138px;
+  left: 141px;
+  width: 296px;
+  height: 99px;
+}
+.group-icon,
+.group-parent {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  width: 142px;
+  height: 24px;
+}
+.group-parent {
+  top: 48px;
+  left: 1208px;
+  height: 85px;
+  font-size: var(--font-size-lg);
+}
+.nodeps-600x600-3-icon {
+  position: absolute;
+  top: 19px;
+  left: 175px;
+  width: 193px;
+  height: 115px;
+  object-fit: cover;
+}
+.div {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 720px);
+  background-color: var(--primary);
+  width: 1440px;
+  height: 309px;
+  overflow: hidden;
+  color: var(--color-gray-400);
+  font-family: var(--font-roboto);
+}
+.span {
+  color: var(--secondary-2);
+}
+.first-name {
+  position: relative;
+  line-height: 24px;
+  opacity: 0.4;
+}
+.frame-child {
+  position: relative;
+  border-radius: var(--br-9xs);
+  background-color: var(--secondary);
+  border: 1px solid var(--color-darkgray-200);
+  box-sizing: border-box;
+  width: 470px;
+  height: 50px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.first-name-parent,
+.frame-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.frame-group {
+  gap: var(--gap-13xl);
+}
+.icon-checkbox {
+  position: relative;
+  border-radius: var(--br-9xs);
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.save-this-information {
+  position: relative;
+  line-height: 24px;
+}
+.frame-parent,
+.icon-checkbox-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.frame-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+}
+.frame-wrapper,
+.payment-page-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 470px;
+  height: 814px;
+}
+.payment-page-child {
+  top: 320px;
+  left: 124px;
+  font-size: var(--input-placeholder-size);
+}
+.g92-2-500x500-1-icon,
+.vector-icon5 {
+  position: absolute;
+  height: 34.6%;
+  width: 37.01%;
+  top: 0;
+  right: 62.99%;
+  bottom: 65.4%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.g92-2-500x500-1-icon {
+  height: 78.19%;
+  width: 90.53%;
+  top: 11.11%;
+  right: 3.92%;
+  bottom: 10.7%;
+  left: 5.56%;
+  border-radius: var(--br-5xs);
+  object-fit: cover;
+}
+.gamepad-cart-small {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.gemstone-earrings-parent {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.gamepad-cart-small-parent {
+  align-self: stretch;
+  height: 54px;
+  flex-direction: row;
+  gap: var(--gap-5xl);
+}
+.frame-wrapper1,
+.gamepad-cart-small-group,
+.gamepad-cart-small-parent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-wrapper1 {
+  align-self: stretch;
+  flex-direction: column;
+}
+.gamepad-cart-small-group {
+  width: 511px;
+  height: 54px;
+  flex-direction: row;
+  gap: var(--gap-5xl);
+}
+.frame-wrapper2,
+.subtotal-parent {
+  display: flex;
+  align-items: flex-start;
+}
+.frame-wrapper2 {
+  width: 511px;
+  flex-direction: column;
+  justify-content: center;
+}
+.subtotal-parent {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 307px;
+}
+.underline-icon {
+  position: relative;
+  width: 422px;
+  height: 1px;
+  opacity: 0.4;
+}
+.shipping-parent {
+  flex-direction: row;
+  gap: 314px;
+}
+.frame-parent2,
+.shipping-parent,
+.total-parent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.total-parent {
+  flex-direction: row;
+  gap: 335px;
+}
+.frame-parent2 {
+  flex-direction: column;
+  gap: var(--gap-base);
+}
+.radio-button-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+.image-32-icon {
+  position: absolute;
+  height: 60%;
+  width: 90%;
+  top: 20%;
+  right: 5%;
+  bottom: 20%;
+  left: 5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.bkash {
+  position: relative;
+  width: 42px;
+  height: 28px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.image-30-icon,
+.image-31-icon,
+.image-33-icon {
+  position: absolute;
+  height: 40%;
+  width: 90%;
+  top: 30%;
+  right: 5%;
+  bottom: 30%;
+  left: 5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.image-31-icon,
+.image-33-icon {
+  height: 90%;
+  width: 93.33%;
+  top: 5%;
+  right: 3.33%;
+  bottom: 5%;
+  left: 3.33%;
+}
+.image-33-icon {
+  height: 65%;
+  top: 17.5%;
+  bottom: 17.5%;
+}
+.bkash-parent {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+}
+.bkash-parent,
+.frame-parent1,
+.frame-parent6 {
+  display: flex;
+  justify-content: flex-start;
+}
+.frame-parent6 {
+  flex-direction: row;
+  align-items: center;
+  gap: 155px;
+}
+.frame-parent1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-13xl);
+}
+.view-all-products {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.button {
+  position: absolute;
+  top: 472px;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background: linear-gradient(92.12deg, #f8a093, #f0513a 93.75%);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-lg) var(--padding-5xl);
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+}
+.frame-container {
+  position: absolute;
+  top: 427px;
+  left: 759px;
+  width: 511px;
+  height: 532px;
+  font-size: var(--input-placeholder-size);
+}
+.group-child1 {
+  position: absolute;
+  top: 8px;
+  left: calc(50% - 497px);
+  width: 994px;
+  height: 27px;
+}
+.group-child2 {
+  position: absolute;
+  top: 4px;
+  left: 138.7px;
+  width: 134.94px;
+  height: 24px;
+}
+.logoswhatsapp-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.whatsapp {
+  position: relative;
+  font-weight: 500;
+}
+.logoswhatsapp-icon-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumspringgreen);
+  width: 123.7px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-base);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.group-frame,
+.group-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 273.64px;
+  height: 33px;
+}
+.group-wrapper {
+  left: 705.26px;
+}
+.group-div {
+  position: absolute;
+  top: 41px;
+  left: calc(50% - 494.5px);
+  width: 994px;
+  height: 35px;
+}
+.about-us1,
+.contact-us,
+.shop {
+  position: absolute;
+  top: 0;
+  left: 161px;
+}
+.contact-us,
+.shop {
+  left: 343px;
+}
+.contact-us {
+  left: 497px;
+}
+.about-us-parent,
+.home-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57px;
+  height: 22px;
+}
+.about-us-parent {
+  top: 139px;
+  width: 599px;
+}
+.nodeps-600x600-2-icon {
+  position: absolute;
+  top: 0;
+  left: 191px;
+  width: 193px;
+  height: 115px;
+  object-fit: cover;
+}
+.group-parent2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 599px;
+  height: 161px;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-100);
+}
+.group-container {
+  position: absolute;
+  top: 28px;
+  left: calc(50% - 337px);
+  width: 999px;
+  height: 161px;
+  color: var(--primary);
+  font-family: var(--font-montserrat);
+}
+.address,
+.payment {
+  position: absolute;
+  top: 0;
+  left: 139px;
+  letter-spacing: 0.12em;
+}
+.payment {
+  left: 415.01px;
+  color: var(--color-darkslategray);
+}
+.group-child3,
+.line-div {
+  position: absolute;
+  top: 11.5px;
+  left: -0.5px;
+  border-top: 1px dashed var(--color-darkslategray);
+  box-sizing: border-box;
+  width: 108px;
+  height: 1px;
+}
+.group-child3 {
+  left: 275.5px;
+}
+.address-parent {
+  top: 0;
+  left: 78px;
+  width: 512.01px;
+  height: 22px;
+}
+.address-parent,
+.bag,
+.line-icon {
+  position: absolute;
+}
+.bag {
+  top: 0;
+  left: 0;
+  letter-spacing: 0.12em;
+}
+.line-icon {
+  top: 27px;
+  left: 244px;
+  width: 38.01px;
+  height: 2px;
+}
+.bag-parent,
+.group-parent3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 281.01px;
+  height: 28px;
+  color: var(--color-darkslategray);
+}
+.group-parent3 {
+  top: 267px;
+  left: 425px;
+  width: 590.01px;
+  font-size: var(--font-size-lg);
+  color: var(--color-tomato-200);
+}
+.payment-page {
+  position: relative;
+  background: radial-gradient(50% 50%at 50% 50%, #fbf5ff, #efebef);
+  width: 100%;
+  height: 1500px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--title-14px-regular-size);
+  color: var(--text2);
+  font-family: var(--font-lato);
+}

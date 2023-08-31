@@ -1,0 +1,378 @@
+.founder_img {
+    width: 100%;
+    max-width: 80%;
+  }
+  
+  .pendant_img {
+    width: 100%;
+    max-width: 82%;
+    height: auto;
+  }
+  
+  .shop_now {
+    background-color: linear-gradient(92.12deg, #f8a093, #f0513a 93.75%);
+    width: 100%;
+    max-width: 15vw;
+    font-family: lato;
+    font-weight: semi;
+  }
+  
+  .shop_now:hover {
+    background-color: #F8A093;
+  }
+  
+  .brilliance {
+    font-size: 2.1rem;
+    text-align: left;
+  }
+  
+  .about {
+    color: #F8A093;
+    text-align: left;
+  }
+  
+  .founder_para {
+    color: #999191;
+    text-align: left;
+  }
+  
+  .vector-icon8 {
+    position: absolute;
+    width: 21.01%;
+    top: 0;
+    right: 62.99%;
+    bottom: 90.04%;
+    left: -9%;
+    max-width: 80%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  
+  .vector-icon {
+    position: absolute;
+    width: 11.01%;
+    top: 160%;
+    right: 2.99%;
+    bottom: 8.04%;
+  
+    overflow: hidden;
+    max-height: 100%;
+  }
+  
+  .btn-success {
+    --bs-btn-bg: #3CD774;
+  }
+  
+  .vector-icon6 {
+    position: absolute;
+    height: 43.51%;
+    width: 69.03%;
+    top: 40.97%;
+    right: -10.69%;
+    bottom: 75.52%;
+    left: 55.67%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  
+  /* navbar */
+  .icon_tray_items {
+    margin-top: 0.9rem;
+  }
+  
+  .icon_tray {
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    width: 90%;
+    gap: 1.2vw;
+    margin-top: 2vh;
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 767px) {
+    .icon_tray {
+      justify-content: space-between;
+      /* Revert to default spacing in mobile view */
+      left: 0;
+      /* Reset left position for centering */
+      padding: 0 15px;
+      /* Add padding to both sides for better spacing */
+      top: 10px;
+      /* Adjust top spacing */
+    }
+  
+    .navbar {
+      margin-left: 0;
+      /* Reset the margin for mobile screens */
+    }
+  
+    .container {
+      margin-left: 20px;
+    }
+  
+    .vector-icon {
+      display: none;
+    }
+  
+    .vector-icon6 {
+      display: none;
+    }
+  
+    .vector-icon8 {
+      display: none;
+    }
+  }
+  
+  .pure {
+    margin-bottom: 1vw;
+    margin-top: 0;
+    color: #7C7C7C;
+    font-size: 1vw;
+    margin-top: -5px;
+  }
+  
+  .hbp {
+    font-size: 1.2vw;
+    color: #f25740;
+    margin-bottom: 0;
+  }
+  
+  .tower {
+    width: 2.5vw;
+    margin-bottom: 1.2vw;
+  }
+  
+  .navbar a:active {
+    color: #F2644F;
+    margin-top: -10px;
+  }
+  
+  .navbar {
+    margin-left: 55%;
+  }
+  
+  @media (min-width: 992px) {
+    .heading {
+      margin: 0 200px;
+      /* Apply margin only for computer views */
+    }
+  }
+  
+  body {
+    font-family: lato;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f1f8;
+    overflow-x: hidden;
+  }
+  
+  
+  .download {
+    text-align: center;
+    width: 18vw;
+  }
+  
+  .nbar {
+    display: flex;
+    margin-bottom: 2.9vw;
+    margin-right: 190px;
+    gap: 1.2vw;
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-success {
+    --bs-btn-bg: #3CD774;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  /* Media query for mobile view */
+  
+  @media (max-width: 767px) {
+    .footer .row .col-sm-12 {
+      text-align: center;
+    }
+  
+    .navbar {
+      margin-left: 0;
+      /* Reset the margin for mobile screens */
+    }
+  
+    .fi1 .download {
+      width: 72vw;
+    }
+  }
+  
+  
+  
+  
+  
+  .review-carousel {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 300%;
+    /* Adjust as needed based on the number of frames */
+  }
+  
+  .carousel-frame {
+    flex: 0 0 33.33%;
+    display: flex;
+    align-items: center;
+    padding: 4vw;
+    flex-direction: row;
+  
+    justify-content: space-around;
+    height: 35vw;
+    gap: 11vw;
+    text-align: start;
+    width: 10%;
+  }
+  
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .review-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+    transition: background-color 0.2s;
+  }
+  
+  .right-arrow {
+    right: 0;
+  }
+  
+  .carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  
+  
+  
+  
+  .fi1 {
+    flex-basis: 40%;
+    box-sizing: border-box;
+  }
+  
+  /* Adjust width for the other columns */
+  .footer_items {
+    flex-basis: calc((100% - 40%) / 4);
+    /* 4 is the number of other columns */
+    box-sizing: border-box;
+  }
+  
+  .footer_items h2 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .footer_items ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer_items ul li {
+    margin-bottom: 10px;
+  }
+  
+  .social_icons i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact_info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact_info img {
+    margin-right: 10px;
+  }
+  
+  
+  .footer_icon {
+    width: 90%;
+  }
+  
+  .image-flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-flex-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 1px;
+  }
+  
+  .download {
+    text-align: center;
+    width: 18vw;
+  }
+  
+  .footer {
+  
+    justify-content: space-between;
+    padding: 100px;
+    font-family: roboto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.6vw;
+    background-color: white;
+  }
+  
+  .play_store {
+    width: 30vw;
+    min-width: 8vw;
+  }
+  
+  @media (max-width: 767px) {
+    .footer .row .col-sm-12 {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .fi1 .download {
+      width: 72vw;
+    }
+  }
+  
+  .founder_para {
+    font-size: 16px;
+    width: 90%;
+  }

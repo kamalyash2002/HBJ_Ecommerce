@@ -74,7 +74,7 @@ class PaymentView(View):
             return redirect("/")
 
         except stripe.error.RateLimitError as e:
-            # Too many requests made to the API too quickly
+            # Too many requests made to the API too quickly and this is the case where the thing 
             messages.error(self.request, "RateLimitError")
             return redirect("/")
 
@@ -233,7 +233,7 @@ class CheckoutView(View):
 #     return render(request, "shop.html", context)
 
 
-@login_required
+@login_required(login_url='/accounts/login')
 def add_to_cart(request, slug):
     item = get_object_or_404(Item, slug=slug)
     order_item, created = OrderItem.objects.get_or_create(
@@ -391,3 +391,29 @@ class Aboutview(ListView):
     template_name = "about.html"
     queryset = Item.objects.filter(is_active=True)
     context_object_name = 'items'
+
+class Contactview(ListView):
+    template_name = "contact.html"
+    queryset = Item.objects.filter(is_active=True)
+    context_object_name = 'items'
+
+@login_required(login_url='/login/')  # URL to redirect to if the user is not logged in
+def profile_view(request):
+    if request.method == 'GET':
+        # Your profile view logic for GET requests
+        return render(request, 'profile.html')
+    elif request.method == 'POST':
+        # Your profile update logic for POST requests
+        # For example, you might process form data here and update the user's profile
+        return redirect('profile')  # Redirect back to the profile page
+
+    # Handle other HTTP methods if needed
+
+    return render(request, 'profile.html')
+
+def login(request):
+    return render(request,'login.html')
+    
+
+
+

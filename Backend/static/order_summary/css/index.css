@@ -1,0 +1,726 @@
+.vector-icon {
+  position: absolute;
+  height: 23.18%;
+  width: 15.23%;
+  top: 69.88%;
+  right: -2.8%;
+  bottom: 6.94%;
+  left: 87.57%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.group-child {
+  border-radius: var(--br-base);
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    #dfabab,
+    rgba(126, 194, 223, 0)
+  );
+}
+.cart-page-inner,
+.group-child,
+.rectangle-wrapper,
+.vector-icon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 209px;
+  height: 200px;
+}
+.cart-page-inner,
+.vector-icon1 {
+  top: 1693px;
+  left: -412px;
+}
+.vector-icon1 {
+  top: 476px;
+  left: 0;
+  width: 637.47px;
+  height: 730.25px;
+  opacity: 0.7;
+}
+.vector-icon2,
+.vector-icon3 {
+  position: absolute;
+  top: 2236px;
+  left: -203px;
+  width: 637.47px;
+  height: 542.25px;
+}
+.vector-icon3 {
+  top: 3083px;
+  left: 1034px;
+}
+.product-durability {
+  position: absolute;
+  top: 3715px;
+  left: 782px;
+  width: 128px;
+  height: 128px;
+}
+.vector-icon4,
+.vector-icon5 {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon4 {
+  position: absolute;
+  height: 6.92%;
+  width: 100%;
+  top: 87.75%;
+  right: 0;
+  bottom: 5.34%;
+  left: 0;
+}
+.vector-icon5 {
+  height: 36.02%;
+  width: 37.01%;
+  right: 62.99%;
+  bottom: 63.98%;
+}
+.products,
+.vector-icon5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rings {
+  margin-block-start: 0;
+  margin-block-end: 24px;
+}
+.pendant {
+  margin: 0;
+}
+.products-parent,
+.rings-bracelets-earrings-pe {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  font-size: var(--title-14px-regular-size);
+}
+.products-parent {
+  top: 48px;
+  left: 554px;
+  width: 74px;
+  height: 173px;
+  font-size: var(--font-size-lg);
+}
+.about-us,
+.information {
+  position: absolute;
+  left: 0;
+}
+.information {
+  top: 0;
+  font-size: var(--font-size-lg);
+}
+.about-us {
+  top: 61px;
+}
+.collection,
+.our-produts {
+  position: absolute;
+  top: 96px;
+  left: 0;
+}
+.collection {
+  top: 128px;
+}
+.information-parent,
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  height: 144px;
+}
+.inner {
+  top: 48px;
+  left: 714px;
+}
+.group-inner,
+.group-item,
+.parent {
+  position: absolute;
+  left: 0;
+  height: 24px;
+}
+.group-item {
+  top: 0;
+  width: 24px;
+  overflow: hidden;
+}
+.group-inner,
+.parent {
+  top: 61px;
+  width: 136px;
+}
+.group-inner {
+  top: 100px;
+  width: 24px;
+  overflow: hidden;
+}
+.westheimer-rd-santa {
+  position: absolute;
+  top: 3px;
+  left: 40px;
+  line-height: 24px;
+  display: inline-block;
+  width: 208px;
+}
+.westheimer-rd-santa-ana-illi-parent {
+  position: absolute;
+  top: 141px;
+  left: 0;
+  width: 248px;
+  height: 51px;
+}
+.silverjewel123gmailcom {
+  position: absolute;
+  top: 4px;
+  left: 40px;
+}
+.contact-parent,
+.silverjewel123gmailcom-parent {
+  position: absolute;
+  top: 101px;
+  left: 0;
+  width: 209px;
+  height: 24px;
+}
+.contact-parent {
+  top: 48px;
+  left: 874px;
+  width: 248px;
+  height: 192px;
+}
+.download-the-app {
+  position: absolute;
+  top: 0;
+  left: 9px;
+  line-height: 24px;
+}
+.image-1-icon,
+.image-2-icon {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  width: 136px;
+  height: 41px;
+  object-fit: cover;
+}
+.image-2-icon {
+  left: 160px;
+}
+.download-the-app-by-clicking-t-parent {
+  position: absolute;
+  top: 138px;
+  left: 141px;
+  width: 296px;
+  height: 99px;
+}
+.group-icon,
+.group-parent {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  width: 142px;
+  height: 24px;
+}
+.group-parent {
+  top: 48px;
+  left: 1208px;
+  height: 85px;
+  font-size: var(--font-size-lg);
+}
+.nodeps-600x600-3-icon {
+  position: absolute;
+  top: 19px;
+  left: 175px;
+  width: 193px;
+  height: 115px;
+  object-fit: cover;
+}
+.div,
+.frame-div {
+  position: absolute;
+}
+.div {
+  top: 1132px;
+  left: calc(50% - 720px);
+  background-color: var(--primary);
+  width: 1440px;
+  height: 309px;
+  overflow: hidden;
+  font-family: var(--font-roboto);
+}
+.frame-div {
+  top: 8px;
+  left: calc(50% - 497px);
+  width: 994px;
+  height: 27px;
+}
+.group-child1 {
+  position: absolute;
+  top: 4px;
+  left: 138.7px;
+  width: 134.94px;
+  height: 24px;
+}
+.logoswhatsapp-icon {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.whatsapp {
+  position: relative;
+  font-weight: 500;
+}
+.logoswhatsapp-icon-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-mediumspringgreen);
+  width: 123.7px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-5xs) var(--padding-base);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-3xs);
+}
+.group-frame,
+.group-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 273.64px;
+  height: 33px;
+}
+.group-wrapper {
+  left: 705.26px;
+}
+.frame-parent {
+  position: absolute;
+  top: 41px;
+  left: calc(50% - 494.5px);
+  width: 994px;
+  height: 35px;
+}
+.about-us1,
+.contact-us,
+.shop {
+  position: absolute;
+  top: 0;
+  left: 161px;
+}
+.contact-us,
+.shop {
+  left: 343px;
+}
+.contact-us {
+  left: 497px;
+}
+.about-us-parent,
+.home-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 57px;
+  height: 22px;
+}
+.about-us-parent {
+  top: 139px;
+  width: 599px;
+}
+.nodeps-600x600-2-icon {
+  position: absolute;
+  top: 0;
+  left: 191px;
+  width: 193px;
+  height: 115px;
+  object-fit: cover;
+}
+.group-parent1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 599px;
+  height: 161px;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-100);
+}
+.group-container {
+  position: absolute;
+  top: 25px;
+  left: calc(50% - 337px);
+  width: 999px;
+  height: 161px;
+  color: var(--primary);
+  font-family: var(--font-montserrat);
+}
+.address,
+.payment {
+  position: absolute;
+  top: 0;
+  left: 139px;
+  letter-spacing: 0.12em;
+}
+.payment {
+  left: 415.01px;
+}
+.group-child2,
+.line-div {
+  position: absolute;
+  top: 11.5px;
+  left: -0.5px;
+  border-top: 1px dashed var(--color-darkslategray);
+  box-sizing: border-box;
+  width: 108px;
+  height: 1px;
+}
+.group-child2 {
+  left: 275.5px;
+}
+.address-parent {
+  top: 0;
+  left: 78px;
+  width: 512.01px;
+  height: 22px;
+}
+.address-parent,
+.bag,
+.line-icon {
+  position: absolute;
+}
+.bag {
+  top: 0;
+  left: 0;
+  letter-spacing: 0.12em;
+}
+.line-icon {
+  top: 27px;
+  left: 4px;
+  width: 38.01px;
+  height: 2px;
+}
+.bag-parent {
+  left: 0;
+  width: 41.01px;
+  height: 28px;
+  color: #f25d47;
+}
+.bag-parent,
+.group-parent3,
+.price {
+  position: absolute;
+  top: 0;
+}
+.group-parent3 {
+  left: 279px;
+  width: 590.01px;
+  height: 28px;
+}
+.price {
+  left: 650px;
+}
+.quantity-parent,
+.total {
+  position: absolute;
+  top: 0;
+  left: 233px;
+}
+.quantity-parent {
+  left: 861px;
+  width: 276px;
+  height: 24px;
+}
+.items-parent {
+  position: relative;
+  width: 1137px;
+  height: 24px;
+  z-index: 0;
+  font-size: var(--font-size-xl);
+  color: var(--text2);
+}
+.frame-child {
+  position: relative;
+  border-top: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  width: 1148.15px;
+  height: 1px;
+  z-index: 1;
+}
+.div2,
+.gemstone-earrings {
+  position: absolute;
+  top: 22px;
+  line-height: 24px;
+}
+.div2 {
+  left: 665px;
+  color: var(--color-dimgray-100);
+}
+.gemstone-earrings {
+  left: 113px;
+}
+.gemstone-earrings-parent,
+.group-child3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 69px;
+}
+.group-child3 {
+  border-radius: var(--br-5xs);
+  width: 93px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.gemstone-earrings-parent {
+  width: 246px;
+}
+.div3,
+.rectangle-div {
+  position: absolute;
+  top: 0;
+}
+.rectangle-div {
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-gainsboro-100);
+  width: 91px;
+  height: 30px;
+}
+.div3 {
+  left: 23.33px;
+  line-height: 24px;
+}
+.risubtract-fill-icon,
+.vector-icon6 {
+  position: absolute;
+  top: 4px;
+  left: 47.33px;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+.vector-icon6 {
+  height: 5.56%;
+  width: 14.74%;
+  top: 45.83%;
+  right: 85.26%;
+  bottom: 48.61%;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.container {
+  position: absolute;
+  top: 3px;
+  left: 14px;
+  width: 63.33px;
+  height: 24px;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 19px;
+  left: 862px;
+  width: 91px;
+  height: 30px;
+  color: var(--text2);
+}
+.div4 {
+  position: absolute;
+  top: 22px;
+  left: 1110px;
+  line-height: 24px;
+}
+.frame-item,
+.group {
+  position: relative;
+  width: 1148px;
+  height: 69px;
+  z-index: 2;
+}
+.frame-item {
+  border-top: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  width: 1148.15px;
+  height: 1px;
+  z-index: 3;
+}
+.sterling-earrings-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 227px;
+  height: 69px;
+}
+.frame-inner,
+.parent1 {
+  position: relative;
+  width: 1148px;
+  height: 69px;
+  z-index: 4;
+}
+.frame-inner {
+  border-top: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  width: 1148.15px;
+  height: 1px;
+  z-index: 5;
+}
+.div8,
+.subtotal {
+  position: absolute;
+  top: 0;
+}
+.div8 {
+  left: 381px;
+  line-height: 24px;
+}
+.subtotal {
+  left: 0;
+  font-size: var(--font-size-xl);
+  color: var(--text2);
+}
+.frame-child1,
+.parent3 {
+  position: relative;
+  width: 428px;
+  height: 24px;
+  z-index: 6;
+}
+.frame-child1 {
+  border-top: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  width: 431.17px;
+  height: 1px;
+  z-index: 7;
+}
+.coupon-code,
+.coupon-code-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 428px;
+}
+.coupon-code {
+  display: inline-block;
+}
+.coupon-code-wrapper {
+  height: 24px;
+}
+.group-wrapper1 {
+  position: relative;
+  width: 428px;
+  height: 24px;
+  z-index: 8;
+  font-size: var(--font-size-xl);
+  color: var(--text2);
+}
+.frame-child2 {
+  position: relative;
+  border-top: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  width: 431.17px;
+  height: 1px;
+  z-index: 9;
+}
+.div9 {
+  position: absolute;
+  top: 0;
+  left: 364px;
+  line-height: 24px;
+  font-weight: 800;
+}
+.group-wrapper2 {
+  position: relative;
+  width: 428px;
+  height: 24px;
+  z-index: 10;
+  font-size: var(--font-size-3xl);
+}
+.group-child6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: #f4f4f4;
+  border: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  width: 112px;
+  height: 32px;
+}
+.add-coupon {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  line-height: 24px;
+}
+.rectangle-container {
+  position: absolute;
+  margin: 0 !important;
+  top: 378px;
+  left: 1036px;
+  width: 112px;
+  height: 32px;
+  z-index: 11;
+}
+.group-parent4 {
+  position: absolute;
+  top: 142px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+  font-size: var(--input-placeholder-size);
+}
+.group-parent2 {
+  position: absolute;
+  top: 326px;
+  left: 131px;
+  width: 1148px;
+  height: 616px;
+  font-size: var(--font-size-lg);
+  color: var(--color-darkslategray);
+}
+.view-all-products {
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+}
+.button {
+  position: absolute;
+  top: 1009px;
+  left: 1109px;
+  border-radius: var(--br-5xs);
+  background: linear-gradient(92.12deg, #f8a093, #f0513a 93.75%);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-base) 48px;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-lg);
+  color: var(--text);
+}
+.cart-page {
+  position: relative;
+  background: radial-gradient(50% 50%at 50% 50%, #fbf5ff, #efebef);
+  width: 100%;
+  height: 1441px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--title-14px-regular-size);
+  color: var(--color-gray-400);
+  font-family: var(--font-lato);
+}

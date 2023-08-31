@@ -1,0 +1,28 @@
+
+
+  <div class="col-md-4 order-md-2 mb-4">
+      <!-- this is for just displaying the coupon price -->
+      <div class="text-success">
+        <h6 class="my-0">Promo code</h6>
+        <small>{{order.coupon.code}}</small>
+      </div>
+      <span class="text-success">-${{ order.coupon.amount }}</span>
+      <span>Total (USD)</span>
+      <strong>${{ order.get_total }}</strong>
+    {% if DISPLAY_COUPON_FORM %}
+    <form method="POST" action="{% url 'core:add-coupon' %}" class="card p-2">
+      {% csrf_token %}
+      <div class="input-group">
+        {{ couponform.code }}
+        <div class="input-group-append">
+          <button type="submit" class="btn btn-primary" style="background-color: rgb(232, 85, 52); border-radius: 9px; height: 50px;width: 150px;margin-top: 5px;">Redeem</button>
+        </div>
+      </div>
+    </form>
+    {% endif %}
+  </div>
+
+
+
+
+
