@@ -1,133 +1,66 @@
+{% extends "account/base.html" %}
 {% load static %}
 {% load i18n %}
 {% load account socialaccount %}
 {% load crispy_forms_tags %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'login/css/styles.css' %}">
-    <title>Login</title>
-</head>
-<body>
-  <div>
-    <div class="row">
-      <div class="col-md-8 text-center">
-          <div class="row">
-              <div class="heading">
-                <div class="tower_para">
-                  HAUTE BIJOUX <img src="{% static 'login/public/1noDePS-600x600 2.png' %}" alt="" class="tower">BY
-                  PRIANCA
-              </div>
-              
-                  <p class="pure">Pure 92.5 Silver and Semi Precious Gemstones Jewellery</p>
-              </div>
-          </div>
-          <div class="row">
-              <div class="nbar" style="font-size: bold;">
-                  <nav class="navbar navbar-expand-lg" style="width: 100%;">
-                      <div class="container-fluid">
 
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                              aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNav">
-                              <ul class="navbar-nav navbar_items" style="display: flex;
-                               width: 100%;font-weight: 600;font-size: 100%;">
-                                  <li class="nav-item">
-                                      <a class="nav-link" href="#">Home</a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a class="nav-link" href="#" >About us</a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a class="nav-link" href="#">Shop</a>
-                                  </li>
-                                  <li class="nav-item">
-                                      <a class="nav-link" href="#">Contact us</a>
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-                  </nav>
+{% block head_title %}{% trans "Sign In" %}{% endblock %}
 
-              </div>
-          </div>
-      </div>
-      <div class="col-md-4">
-          <div class="icon_tray">
-              <a class="nav-link icon_tray_items" href="#">
-                  <button type="button" class="btn btn-success whatsapp_button"
-                      style="background-color: #1FAF38; ">
-                      <i class="fa-brands fa-whatsapp"></i> Whatsapp
-                  </button>
-              </a>
-              <a class="nav-link icon_tray_items" href="#"><i class="fa-regular fa-heart"></i></a>
-              <a class="nav-link icon_tray_items" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-              <a class="nav-link icon_tray_items" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-              <a class="nav-link icon_tray_items" href="#"><i class="fa-regular fa-user"></i></a>
-          </div>
-      </div>
+{% block content %}
+
+<style type="text/css">
+  input {
+
+    border: 1px solid #ced4da !important;
+
+}
+</style>
+
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-6 mt-5 offset-3">
+      Welcome to
+      <h3>{% trans "Haute Bijox By Prianca" %}</h3>
+
+{% get_providers as socialaccount_providers %}
+
+{% if socialaccount_providers %}
+<p>{% blocktrans with site.name as site_name %}Please sign in with one
+of your existing social accounts. Or, <a href="{{ signup_url }}">sign up</a>
+for a account and sign in below:{% endblocktrans %}</p>
+
+<div class="socialaccount_ballot">
+  <button class="btn btn-google" style="background-color:white"> <img src="{% static 'login/public/google-removebg-preview.png' %}" style="width: 5%;"> <a href="{% provider_login_url "google" method="js" %}">Login with Google</a></button>
+  <div class="or-divider">
+    <div class="line"></div>
+    <div class="or-text">OR</div>
+    <div class="line"></div>
+</div>
+</div>
+
+{% include "socialaccount/snippets/login_extra.html" %}
+
+{% else %}
+<p>{% blocktrans %}If you have not created an account yet, then please
+<a href="{{ signup_url }}" class="text-primary">sign up</a> first.{% endblocktrans %}</p>
+{% endif %}
+
+<form class="login" method="POST" action="{% url 'account_login' %}">
+  {% csrf_token %}
+  {{ form|crispy }}
+  {% if redirect_field_value %}
+
+  <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}"/>
+  {% endif %}
+  <button class="btn btn-primary login-btn" type="submit">{% trans "Login" %}</button>
+  <p>Don't have an account? <a href="{{ signup_url }}"><span style="color: #6358DC;">Sign up</span></a></p>
+</form>
+
+    </div>
   </div>
+</div>
 
-  </div>
-    <div class="container">
-          
-      {% get_providers as socialaccount_providers %}
-        <div class="login-form">
-            <h2 style="text-align: start;">Welcome to<br>Haute Bijoux By Prianca</h2>
-            <div class="social-login">
-              <button class="btn btn-google" style="background-color:white">
-                  <img src="{% static 'login/public/google-removebg-preview.png' %}" style="width: 5%;">
-                  Login with Google
-              </button>
-              <button class="btn btn-facebook" style="background-color:white">
-                  <img src="{% static 'login/public/facebook.png' %}" style="width: 5%;">
-                  Login with Facebook
-              </button>
-          </div>
-          
-            <div class="or-divider">
-                <div class="line"></div>
-                <div class="or-text">OR</div>
-                <div class="line"></div>
-            </div>
-            <form>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <i class="fa-solid fa-envelope"></i>
-                    <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <i class="fa-solid fa-key"></i>
-                    <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
-                </div>
-                <div class="form-group form-check" style="background-color: #f6f1f8;">
-                    <input type="checkbox" id="remember-me" class="form-check-input">
-                    <label for="remember-me" class="form-check-label">Remember me</label>
-                </div>
-                <p><a href="#" style="float: right; color: #6358DC;">Forgot Password?</a></p>
-                <button type="submit" class="btn btn-primary login-btn">Login</button>
-                <p>Don't have an account? <a href="{{ signup_url }}"><span style="color: #6358DC;">Sign up</span></a></p>
-            </form>
-            
-        </div>
-    </div>
-    <div>
-      
-    </div>
-    </div>
-    <img src="{% static 'login/public/vector.svg' %}" alt="" class="vector-icon">
 
-</body>
-<img src="{% static 'login/public/vector8.svg' %}" alt="" class="vector-icon8">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-crossorigin="anonymous"></script>
-<script src="https://kit.fontawesome.com/40d666c88a.js" crossorigin="anonymous"></script>
-</html>
+{% endblock %}

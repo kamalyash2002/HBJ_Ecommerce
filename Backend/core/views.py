@@ -397,7 +397,7 @@ class Contactview(ListView):
     queryset = Item.objects.filter(is_active=True)
     context_object_name = 'items'
 
-@login_required(login_url='/login/')  # URL to redirect to if the user is not logged in
+@login_required(login_url='/accounts/login')  # URL to redirect to if the user is not logged in
 def profile_view(request):
     if request.method == 'GET':
         # Your profile view logic for GET requests
@@ -411,8 +411,7 @@ def profile_view(request):
 
     return render(request, 'profile.html')
 
-def login(request):
-    return render(request,'login.html')
+
     
 
 
