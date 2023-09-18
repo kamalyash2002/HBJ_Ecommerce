@@ -17,6 +17,8 @@ from .views import (
     Aboutview,
     Contactview,
     profile_view,
+    contact_view,
+    success_pay
 )
 from . import views
 
@@ -39,6 +41,8 @@ urlpatterns = [
     path('about/', Aboutview.as_view(), name='about'),
     path('contact',Contactview.as_view(), name='contact'),
     path('profile/',views.profile_view, name = 'profile'),
+    path('contact_view',views.contact_view, name ='contact_view'),
+    path('success', views.success_pay, name = 'success')
     # path('account/login', views.login, name = "login"),
 ] 
 

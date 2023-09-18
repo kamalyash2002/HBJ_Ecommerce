@@ -3,8 +3,8 @@ from django_countries.fields import CountryField
 from django_countries.widgets import CountrySelectWidget
 
 PAYMENT_CHOICES = (
-    ('S', 'Stripe'),
-    ('P', 'PayPal')
+    ('C', 'Cash on Delivery'),
+    ('R', 'Razorpay')
 )
 
 
@@ -24,12 +24,6 @@ class CheckoutForm(forms.Form):
         'class': 'form-control'
     }))
     city = forms.CharField(widget=forms.TextInput(attrs={
-        'class': 'form-control'
-    }))
-    zip = forms.CharField(widget=forms.TextInput(attrs={
-        'class': 'form-control'
-    }))
-    zip = forms.CharField(widget=forms.TextInput(attrs={
         'class': 'form-control'
     }))
     phone_no = forms.CharField(widget=forms.TextInput(attrs={

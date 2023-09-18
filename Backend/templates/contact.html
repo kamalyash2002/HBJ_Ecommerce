@@ -88,7 +88,8 @@
                             is ready to provide you with personalized assistance and ensure your experience.
                         </p>
                        
-                        <form>
+                        <form action = "contact_view" method="POST" >
+                            {% csrf_token %}
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <input type="text" class="form-control contact_inputs" id="inputFirstName" placeholder="Name">
@@ -114,7 +115,6 @@
                                 </select>
                                 <button type="submit" class="btn btn-primary send">Send</button>
                             </div>
-                            
                         </form>
                      
                         <div class="contact_details">

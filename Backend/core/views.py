@@ -2,6 +2,7 @@ from django.conf import settings
 from django.contrib import messages
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView, DetailView, View
@@ -12,16 +13,21 @@ from .models import Item, OrderItem, Order, BillingAddress, Payment, Coupon, Ref
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from urllib import request
+from django.core.mail import send_mail
+import razorpay
 
 # Create your views here.
 import random
 import string
-import stripe
-stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 def create_ref_code():
     return ''.join(random.choices(string.ascii_lowercase + string.digits, k=20))
+
+## payment page view
+
+
+## order karne ke baad 
 
 
 class PaymentView(View):
@@ -29,81 +35,54 @@ class PaymentView(View):
         # order
         order = Order.objects.get(user=self.request.user, ordered=False)
         if order.billing_address:
+            amount = int(order.get_total() * 100)
             context = {
+                'amount':amount,
                 'order': order,
-                'DISPLAY_COUPON_FORM': False
+                'DISPLAY_COUPON_FORM': False,
             }
             return render(self.request, "payment.html", context)
         else:
-            messages.warning(
-                self.request, "u have not added a billing address")
+            messages.warning(self.request, "You have not added a billing address")
             return redirect("core:checkout")
 
     def post(self, *args, **kwargs):
         order = Order.objects.get(user=self.request.user, ordered=False)
-        token = self.request.POST.get('stripeToken')
-        amount = int(order.get_total() * 100)
-        try:
-            charge = stripe.Charge.create(
-                amount=amount,  # cents
-                currency="usd",
-                source=token
-            )
-            # create the payment
-            payment = Payment()
-            payment.stripe_charge_id = charge['id']
-            payment.user = self.request.user
-            payment.amount = order.get_total()
-            payment.save()
+        amount = int(order.get_total * 100)  # Convert the amount to paise (Razorpay uses paise as the currency)
 
-            # assign the payment to the order
-            order.ordered = True
-            order.payment = payment
-            # TODO : assign ref code
-            order.ref_code = create_ref_code()
-            order.save()
+        # Initialize Razorpay client with your API Key and Secret Key
+        razorpay_client = razorpay.Client(auth=("rzp_test_LSGLw6o2D7SANw", "DnKEUMqQXnN6sQEWXdOGOWWn"))
 
-            messages.success(self.request, "Order was successful")
-            return redirect("/")
+        # Create a Razorpay order
+        razorpay_order = razorpay_client.order.create({
+            'amount': amount,
+            'currency': 'INR',  # Change this to your desired currency
+            'payment_capture': 1  # Auto-capture the payment
+        })
 
-        except stripe.error.CardError as e:
-            # Since it's a decline, stripe.error.CardError will be caught
-            body = e.json_body
-            err = body.get('error', {})
-            messages.error(self.request, f"{err.get('message')}")
-            return redirect("/")
+        # Save Razorpay order ID in your order model for reference
+         # create the payment
+        payment = Payment()
+        payment.stripe_charge_id = razorpay_order['id']
+        payment.user = self.request.user
+        payment.amount = order.get_total()
+        payment.save()
+        # assign the payment to the order
+        order.ordered = True
+        order.payment = payment
+        order.razorpay_order_id = razorpay_order['id']
+        order.save()
 
-        except stripe.error.RateLimitError as e:
-            # Too many requests made to the API too quickly and this is the case where the thing 
-            messages.error(self.request, "RateLimitError")
-            return redirect("/")
-
-        except stripe.error.InvalidRequestError as e:
-            # Invalid parameters were supplied to Stripe's API
-            messages.error(self.request, "Invalid parameters")
-            return redirect("/")
-
-        except stripe.error.AuthenticationError as e:
-            # Authentication with Stripe's API failed
-            # (maybe you changed API keys recently)
-            messages.error(self.request, "Not Authentication")
-            return redirect("/")
-
-        except stripe.error.APIConnectionError as e:
-            # Network communication with Stripe failed
-            messages.error(self.request, "Network Error")
-            return redirect("/")
-
-        except stripe.error.StripeError as e:
-            # Display a very generic error to the user, and maybe send
-            # yourself an email
-            messages.error(self.request, "Something went wrong")
-            return redirect("/")
-
-        except Exception as e:
-            # send an email to ourselves
-            messages.error(self.request, "Serious Error occured")
-            return redirect("/")
+        context = {
+            'razorpay_order_id': razorpay_order['id'],
+            'amount': amount,
+        }
+        return render(self.request, "order_conf.html", context)
+    
+# creating the successview
+@csrf_exempt
+def success_pay(request):
+    return render(request,'order_conf.html')
 
 
 # home page class
@@ -177,21 +156,21 @@ class CheckoutView(View):
             order = Order.objects.get(user=self.request.user, ordered=False)
             print(self.request.POST)
             if form.is_valid():
+                first_name = form.cleaned_data.get('first_name')
+                last_name = form.cleaned_data.get('last_name')
                 street_address = form.cleaned_data.get('street_address')
                 apartment_address = form.cleaned_data.get('apartment_address')
-                country = form.cleaned_data.get('country')
-                zip = form.cleaned_data.get('zip')
-                # add functionality for these fields
-                # same_shipping_address = form.cleaned_data.get(
-                #     'same_shipping_address')
-                # save_info = form.cleaned_data.get('save_info')
+                city = form.cleaned_data.get('city')
+                phone_no = form.cleaned_data.get('phone_no')
                 payment_option = form.cleaned_data.get('payment_option')
                 billing_address = BillingAddress(
                     user=self.request.user,
-                    street_address=street_address,
-                    apartment_address=apartment_address,
-                    country=country,
-                    zip=zip,
+                    first_name  = first_name,
+                    last_name = last_name,
+                    street_address = street_address,
+                    apartment_address = apartment_address ,
+                    city =  city ,
+                    phone_no = phone_no ,
                     address_type='B'
                 )
                 billing_address.save()
@@ -199,10 +178,10 @@ class CheckoutView(View):
                 order.save()
 
                 # add redirect to the selected payment option
-                if payment_option == 'S':
-                    return redirect('core:payment', payment_option='stripe')
-                elif payment_option == 'P':
-                    return redirect('core:payment', payment_option='paypal')
+                if payment_option == 'C':
+                    return redirect('core:payment', payment_option='COD')
+                elif payment_option == 'R':
+                    return redirect('core:payment', payment_option='Razorpay')
                 else:
                     messages.warning(
                         self.request, "Invalid payment option select")
@@ -411,8 +390,25 @@ def profile_view(request):
 
     return render(request, 'profile.html')
 
+# this is the contact view
+def contact_view(request):
+    if request.method == 'POST':
+        name = request.POST.get('inputFirstName')
+        email = request.POST.get('inputEmail')
+        phone_number = request.POST.get('inputPhoneNumber')
+        find_us = request.POST.get('inputFindUs')
 
-    
+        # Send email to owner
+        subject = 'Message from ' + str(name)
+        message = f'Name: {name}\nEmail: {email}\nPhone Number: {phone_number}\nHow they found us: {find_us}'
+        from_email = settings.EMAIL_HOST_USER
+        recipient_list = ['backchodbache01@gmail.com']  # Replace with the owner's email address
 
+        try:
+            send_mail(subject, message, from_email, recipient_list, fail_silently=False)
+            messages.success(request, 'Your message was successfully sent!')
+        except Exception as e:
+            messages.error(request, 'There was an error sending your message. Please try again later.')
+            return render(request, 'contact.html')  # Redirect to the contact page or a thank-you page
 
-
+    return render(request, 'contact.html')  # Replace 'contact.html' with your actual template name

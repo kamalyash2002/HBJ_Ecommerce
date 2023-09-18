@@ -1,5 +1,4 @@
 {% load static %}
-{% load category_template_tags %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,10 @@
     <title>Side Menu</title>
 </head>
 
-<body>
+<body style=" background-color: rgba(255, 245, 252, 1);">
+
+    <img src="{% static 'shop/public/vector8.svg' %}" alt="" class="vector-icon8">
+    <img src="{% static 'shop/public/vector.svg' %}" alt="" class="vector-icon">
 
 
 
@@ -22,12 +24,11 @@
                 <div class="heading">
                     <p class="hbp">HBP JEWELS</p>
                     <div class="tower_para">
-                        HAUTE BIJOUX <img src="{% static 'shop/public/1noDePS-600x600 2.png' %}" alt="" class="tower">
-						BY
+                        HAUTE BIJOUX <img src="{% static 'shop/public/1noDePS-600x600 2.png' %}" alt="" class="tower">BY
                         PRIANCA
                     </div>
                     <p class="pure">Pure 92.5 Silver and Semi Precious Gemstones Jewellery</p>
-                </div>
+                </div>                
             </div>
             <div class="row">
                 <div class="nbar" style="font-size: bold;">
@@ -46,10 +47,10 @@
                                         <a class="nav-link" href="#">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/about">About us</a>
+                                        <a class="nav-link" href="#">About us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="/shop">Shop</a>
+                                        <a class="nav-link" href="#">Shop</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Contact us</a>
@@ -153,137 +154,46 @@
             </form>
         </div>
         <div class="sideproducts">
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">
-                        <i class="fas fa-search"></i>
-                    </span>
+            <div class="input-group mb-3" style="justify-content: space-between;">
+                <div class="search-container">
+                    <button class="search-icon"><i class="fas fa-search"></i></button>
+                    <input type="text" class="search-input" placeholder="Search">
+
                 </div>
-                <input type="text" class="form-control" placeholder="Search">
+                <div class="sorting-section" style="margin-right:100px">
+                    <label class="sort-label">Sort by:</label>
+                    <select class="sort-select">
+                        <option value="recommendation">Recommendation</option>
+                        <option value="rating">Rating</option>
+                        <option value="price">Price</option>
+                    </select>
+                </div>
+
             </div>
-            <div class="first_row" style="display: flex; ">
-				{% for item in object_list %}
-					<div class="card">
-						<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
-						<img src="{{ item.image.url }}" alt="Product 4" class="image_item">
-						<a href="{{item.get_absolute_url}}">
-							<p class="price_detail">{{item.title}}</p>
-						</a>
-						<div class="details">
-						<div class="new_price">${{item.discount_price}}</div>
-						<div class="old_price"><s>${{item.price}}</s></div>
-						<div class="percent_off">25% off</div>
-						</div>
-					</div>	
-				{% endfor %}
+            <div class="product-card-container">
+                {% for item in object_list %}
+                <div class="product-card">
+                    <div class="card" style="border: none;">
+                        <div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""
+                                style="margin-right: 6px;"></div>
+                        <img src="{{ item.image.url }}" alt="Product 4" class="image_item">
+                        <a href="{{item.get_absolute_url}}">
+                            <p class="price_detail">{{item.title}}</p>
+                        </a>
+                        <div class="details">
+                            <div class="new_price">${{item.discount_price}}</div>
+                            <div class="old_price"><s>${{item.price}}</s></div>
+                            <div class="percent_off"> 25 % off</div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
                 
-				
+                <!-- Add more product cards as needed -->
             </div>
-            <div class="first_row" style="display: flex; ">
-                <div class="card">
-					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
-					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
-					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
-					<div class="details">
-						<div class="new_price">$150</div>
-						<div class="old_price"><s>$200</s></div>
-						<div class="percent_off">25% off</div>
-					</div>
-				</div>	
-				
-                <div class="card">
-					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
-					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
-					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
-					<div class="details">
-						<div class="new_price">$150</div>
-						<div class="old_price"><s>$200</s></div>
-						<div class="percent_off">25% off</div>
-					</div>
-				</div>	
-				
-				<div class="card">
-					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
-					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
-					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
-					<div class="details">
-						<div class="new_price">$150</div>
-						<div class="old_price"><s>$200</s></div>
-						<div class="percent_off">25% off</div>
-					</div>
-				</div>	
-				
-            </div>
-            <div class="first_row" style="display: flex; ">
-                <div class="card">
-					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
-					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
-					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
-					<div class="details">
-						<div class="new_price">$150</div>
-						<div class="old_price"><s>$200</s></div>
-						<div class="percent_off">25% off</div>
-					</div>
-				</div>	
-				
-				<div class="card">
-					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
-					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
-					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
-					<div class="details">
-						<div class="new_price">$150</div>
-						<div class="old_price"><s>$200</s></div>
-						<div class="percent_off">25% off</div>
-					</div>
-				</div>	
-				
-                <div class="card">
-					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
-					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
-					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
-					<div class="details">
-						<div class="new_price">$150</div>
-						<div class="old_price"><s>$200</s></div>
-						<div class="percent_off">25% off</div>
-					</div>
-				</div>	
-				
-            </div>
-            <div class="first_row" style="display: flex; ">
-				<div class="card">
-					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
-					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
-					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
-					<div class="details">
-						<div class="new_price">$150</div>
-						<div class="old_price"><s>$200</s></div>
-						<div class="percent_off">25% off</div>
-					</div>
-				</div>	
-				
-                <div class="card">
-					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
-					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
-					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
-					<div class="details">
-						<div class="new_price">$150</div>
-						<div class="old_price"><s>$200</s></div>
-						<div class="percent_off">25% off</div>
-					</div>
-				</div>	
-				
-                <div class="card">
-					<div class="wishlist-heart" style="margin-left: 20px;"><img src="{% static 'shop/public/heart.png' %}" alt=""></div>
-					<img src="{% static 'shop/public/rectangle-34624240@2x.png' %}" alt="Product 4" class="image_item">
-					<p class="price_detail">Helen of Troy Gold plated Earrings in 92.5 Silver</p>
-					<div class="details">
-						<div class="new_price">$150</div>
-						<div class="old_price"><s>$200</s></div>
-						<div class="percent_off">25% off</div>
-					</div>
-				</div>	
-				
-            </div>
+
+
+
         </div>
     </div>
 
@@ -296,11 +206,11 @@
                 <div class="row">
                     <div class="col-md-4 col-lg-3 col-sm-12">
                         <div class="footer_items fi1">
-                            <img src="/public/1nodeps600x600-3@2x.png" alt="" class="footer_icon"><br>
+                            <img src="{% static 'shop/public/1nodeps600x600-3@2x.png' %}" alt="" class="footer_icon"><br>
                             <p class="download">Download the app by clicking the link below :</p>
                             <div class="image-flex-container">
-                                <img src="/public/image-1@2x.png" alt="" class="play_store">
-                                <img src="/public/image-2@2x.png" alt="" class="play_store">
+                                <img src="{% static 'shop/public/image-1@2x.png' %}" alt="" class="play_store">
+                                <img src="{% static 'shop/public/image-2@2x.png' %}" alt="" class="play_store">
                             </div>
                         </div>
                     </div>
@@ -330,8 +240,8 @@
                         <div class="footer_items fi4">
                             <h2>Contact</h2>
                             <p><i class="fa-solid fa-phone"></i>(406) 555-0120</p>
-                            <p><img src="/public/dashiconsemail.svg" alt=""> Silverjewel123@gmail.com</p>
-                            <p><img src="/public/frame-3.svg" alt=""> 2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                            <p><img src="{% static 'shop/public/dashiconsemail.svg' %}" alt=""> Silverjewel123@gmail.com</p>
+                            <p><img src="{% static 'shop/public/frame-3.svg' %}" alt=""> 2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-2 col-sm-12">
@@ -352,7 +262,7 @@
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/40d666c88a.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="{static 'shop/index.js'}"></script>
 </body>
 
 </html>

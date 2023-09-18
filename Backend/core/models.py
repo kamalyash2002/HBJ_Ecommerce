@@ -169,7 +169,7 @@ class BillingAddress(models.Model):
     apartment_address = models.CharField(max_length=100)
     city = models.CharField(max_length=100,null=True)
     country = CountryField(multiple=False, null=True)
-    zip = models.CharField(max_length=100)
+    zip = models.CharField(max_length=100,blank=True,null=True)
     address_type = models.CharField(max_length=1, choices=ADDRESS_CHOICES)
     phone_no =  models.CharField(max_length=10,null=True)
     email = models.EmailField(null=True)

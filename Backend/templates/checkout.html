@@ -1,360 +1,279 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="{% static 'checkout/css/global.css'%}" />
-    <link rel="stylesheet" href="{% static 'checkout/css/index.css'%}" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;800;900&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Gilda Display:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Marmelad:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM Serif Display:wght@400&display=swap"
-    />
-  </head>
-  <body>
-    <div class="payment-page">
-      <img class="vector-icon" alt="" src="./public/vector.svg" />
+<html lang="en">
 
-      <div class="payment-page-inner">
-        <div class="rectangle-wrapper">
-          <div class="group-child"></div>
-        </div>
-      </div>
-      <img class="vector-icon1" alt="" src="./public/vector3.svg" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'checkout/css/styles.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda Display:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marmelad:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600;700;900&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM Serif Display:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" />
+</head>
 
-      <img class="vector-icon2" alt="" src="./public/vector4.svg" />
-
-      <img class="vector-icon3" alt="" src="./public/vector4.svg" />
-
-      <div class="product-durability"></div>
-      <img class="vector-icon4" alt="" src="./public/vector1.svg" />
-
-      <div class="div">
-        <div class="products-parent">
-          <b class="products">Products</b>
-          <div class="rings-bracelets-earrings-pe">
-            <p class="rings">Rings</p>
-            <p class="rings">Bracelets</p>
-            <p class="rings">Earrings</p>
-            <p class="pendant">Pendant</p>
-          </div>
-        </div>
-        <div class="inner">
-          <div class="information-parent">
-            <b class="information">Information</b>
-            <div class="about-us">About Us</div>
-            <div class="our-produts">Our Produts</div>
-            <div class="collection">Collection</div>
-          </div>
-        </div>
-        <div class="contact-parent">
-          <b class="information">Contact</b>
-          <div class="parent">
-            <div class="silverjewel123gmailcom">(406) 555-0120</div>
-            <img class="group-item" alt="" src="./public/frame-1.svg" />
-          </div>
-          <div class="group-inner"></div>
-          <div class="westheimer-rd-santa-ana-illi-parent">
-            <div class="westheimer-rd-santa">
-              2972 Westheimer Rd. Santa Ana, Illinois 85486
+<body>
+    <div class="row">
+        <div class="col-md-8 text-center">
+            <div class="row">
+                <div class="heading">
+                    <div class="tower_para">
+                        HAUTE BIJOUX <img src="{% static 'checkout/public/1noDePS-600x600 2.png' %}" alt="" class="tower">BY
+                        PRIANCA
+                    </div>
+                    <p class="pure">Pure 92.5 Silver and Semi Precious Gemstones Jewellery</p>
+                </div>
             </div>
-            <img class="group-item" alt="" src="./public/frame-3.svg" />
-          </div>
-          <div class="silverjewel123gmailcom-parent">
-            <div class="silverjewel123gmailcom">Silverjewel123@gmail.com</div>
-            <img class="group-item" alt="" src="./public/dashiconsemail.svg" />
-          </div>
-        </div>
-        <div class="download-the-app-by-clicking-t-parent">
-          <div class="download-the-app">
-            Download the app by clicking the link below :
-          </div>
-          <img class="image-1-icon" alt="" src="./public/image-1@2x.png" />
+            <div class="row">
+                <div class="nbar" style="font-size: bold;">
+                    <nav class="navbar navbar-expand-lg" style="width: 100%;">
+                        <div class="container-fluid">
 
-          <img class="image-2-icon" alt="" src="./public/image-2@2x.png" />
-        </div>
-        <div class="group-parent">
-          <img class="group-icon" alt="" src="./public/group-2017.svg" />
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav navbar_items" style="display: flex;
+                                 width: 100%;font-weight: 600;font-size: 100%;">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
 
-          <b class="products">Social media</b>
+                </div>
+            </div>
         </div>
-        <img
-          class="nodeps-600x600-3-icon"
-          alt=""
-          src="./public/1nodeps600x600-3@2x.png"
-        />
-      </div>
-      <style>
-        input {
-          width: 100%;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  height: 100%;
-}
-
-.btn {
-        
-        background-color: transparent;
-        color: white;
-        height: 25px;
-            width: 100px;
-    }
-      </style>
-      <div style=" height: 179px; width: 250px; margin-left: 760px;
-      margin-top: 350px;">
-        {% include "order_snippet.html" %}
-      </div>
-      <form method="POST" class="needs-validation" novalidate>
-        {% comment %} just adding the csrf token {% endcomment %}
-        {% csrf_token %}
-      <div class="payment-page-child">
-        <div class="frame-wrapper">
-          <div class="frame-parent">
-            <div class="frame-group">
-              <div class="first-name-parent">
-                <div class="first-name">
-                  <span>First Name</span>
-                  <span class="span">*</span>
-                </div>
-                <div class="frame-child">
-                  {{ form.first_name }}
-                </div>
-              </div>
-              <div class="first-name-parent">
-                <div class="first-name">Last Name</div>
-                <div class="frame-child">
-                  {{ form.last_name }}
-                </div>
-              </div>
-              <div class="first-name-parent">
-                <div class="first-name">
-                  <span>Street Address</span>
-                  <span class="span">*</span>
-                </div>
-                <div class="frame-child">
-                  {{ form.street_address }}
-                </div>
-              </div>
-              <div class="first-name-parent">
-                <div class="first-name">Apartment, floor, etc. (optional)</div>
-                <div class="frame-child">
-                  {{ form.apartment_address }}
-                </div>
-              </div>
-              <div class="first-name-parent">
-                <div class="first-name">
-                  <span>Town/City</span>
-                  <span class="span">*</span>
-                </div>
-                <div class="frame-child">
-                  {{ form.city }}
-                </div>
-              </div>
-              <div class="first-name-parent">
-                <div class="first-name">
-                  <span>Phone Number</span>
-                  <span class="span">*</span>
-                </div>
-                <div class="frame-child">
-                  {{ form.phone_no }}
-                </div>
-              </div>
-              <div class="first-name-parent">
-                <div class="first-name">
-                  <span>Email Address</span>
-                  <span class="span">*</span>
-                </div>
-                <div class="frame-child">
-                  {{ form.email }}
-                </div>
-              </div>
+        <div class="col-md-4">
+            <div class="icon_tray">
+                <a class="nav-link icon_tray_items" href="#">
+                    <button type="button" class="btn btn-success whatsapp_button" style="background-color: #1FAF38; ">
+                        <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                    </button>
+                </a>
+                <a class="nav-link icon_tray_items" href="#"><i class="fa-regular fa-heart"></i></a>
+                <a class="nav-link icon_tray_items" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="nav-link icon_tray_items" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="nav-link icon_tray_items" href="#"><i class="fa-regular fa-user"></i></a>
             </div>
-            <div class="icon-checkbox-parent">
-              <input {% if form.save_info.value %}checked{% endif %} type="checkbox" class="custom-control-input" id="save-info">
-              <div class="save-this-information">
-                Save this information for faster check-out next time
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <div class="frame-container" style="margin-top: 150px;">
-        <div class="frame-parent1">
-          {% for order_item in order.items.all %}
-          <div class="frame-wrapper1">
-            <div class="gamepad-cart-small-parent">
-              <div class="gamepad-cart-small">
-                <img
-                  class="g92-2-500x500-1-icon"
-                  alt=""
-                  src="{{ order_item.item.image.url }}"
-                />
-              </div>
-              <div class="gemstone-earrings-parent">
-                <div class="save-this-information">{{ order_item.item.title }}</div>
-                <div class="save-this-information">${{ order_item.get_final_price }}</div>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
-          <div class="frame-parent2">
-            <div class="frame-parent2">
-              <div class="frame-parent2">
-                <div class="frame-parent2">
-                  <div class="subtotal-parent">
-                    <div class="save-this-information">Subtotal:</div>
-                    <div class="save-this-information">${{ order.get_total }}</div>
-                  </div>
-                  <img
-                    class="underline-icon"
-                    alt=""
-                    src="./public/underline.svg"
-                  />
-                </div>
-                <div class="shipping-parent">
-                  <div class="save-this-information">Shipping:</div>
-                  <div class="save-this-information">Free</div>
-                </div>
-              </div>
-              <img class="underline-icon" alt="" src="./public/underline.svg" />
-            </div>
-            <div class="total-parent">
-              <div class="save-this-information">Total:</div>
-              <div class="save-this-information">{{ order.get_total }}</div>
-            </div>
-          </div>
-          <div class="frame-parent6">
-            <div class="icon-checkbox-parent">
-              <input type="radio" id="html" name="fav_language" value="HTML">
-
-              <div class="save-this-information">Bank</div>
-            </div>
-            <div class="bkash-parent">
-              <div class="bkash">
-                <img
-                  class="image-32-icon"
-                  alt=""
-                  src="./public/image-32@2x.png"
-                />
-              </div>
-              <div class="bkash">
-                <img
-                  class="image-30-icon"
-                  alt=""
-                  src="./public/image-30@2x.png"
-                />
-              </div>
-              <div class="bkash">
-                <img
-                  class="image-31-icon"
-                  alt=""
-                  src="./public/image-31@2x.png"
-                />
-              </div>
-              <div class="bkash">
-                <img
-                  class="image-33-icon"
-                  alt=""
-                  src="./public/image-33@2x.png"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="icon-checkbox-parent">
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <div class="save-this-information">Cash on delivery</div>
-          </div>
-        </div>
-        <div class="button">
-          <div class="view-all-products">
-            <button class="btn">Place Order</button>
-          </div>
-        </div>
-      </div>
-      </form>
-      
-      <div class="group-container">
-        <div class="group-div">
-          <div class="group-child1"></div>
-          <div class="group-wrapper">
-            <div class="group-frame">
-              <div class="group-frame">
-                <img
-                  class="group-child2"
-                  alt=""
-                  src="./public/group-1410126120.svg"
-                />
-
-                <div class="logoswhatsapp-icon-parent">
-                  <img
-                    class="logoswhatsapp-icon"
-                    alt=""
-                    src="./public/logoswhatsappicon.svg"
-                  />
-
-                  <div class="whatsapp">Whatsapp</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="group-parent2">
-          <div class="about-us-parent">
-            <b class="about-us1">About us</b>
-            <b class="shop">Shop</b>
-            <b class="contact-us">Contact us</b>
-            <div class="home-wrapper">
-              <b class="products">Home </b>
-            </div>
-          </div>
-          <img
-            class="nodeps-600x600-2-icon"
-            alt=""
-            src="./public/1nodeps600x600-3@2x.png"
-          />
-        </div>
-      </div>
-      <div class="group-parent3">
-        <div class="address-parent">
-          <div class="address">ADDRESS</div>
-          <div class="payment">PAYMENT</div>
-          <div class="line-div"></div>
-          <div class="group-child3"></div>
-        </div>
-        <div class="bag-parent">
-          <div class="bag">BAG</div>
-          <img class="line-icon" alt="" src="./public/line-495.svg" />
-        </div>
-      </div>
     </div>
-  </body>
+
+    <div class="cart_upp">
+        <div class="bag">Bag</div>
+        <div class="add">Address</div>
+        <div class="pay">Payment</div>
+    </div>
+
+
+
+
+    
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8">
+              <div class="payment-container">
+                  <div class="form-container">
+                      <form method="POST" class="needs-validation" novalidate>
+                        {% csrf_token %}
+                          <div class="form-field">
+                              <label for="first-name">First Name*</label>
+                              {{ form.first_name }}
+                          </div>
+                          <div class="form-field">
+                              <label for="last-name">Last Name</label>
+                              {{ form.last_name }}
+                          </div>
+                          <div class="form-field">
+                              <label for="address">Address*</label>
+                             {{ form.street_address }}
+                          </div>
+                          <div class="form-field">
+                              <label for="apartment">Apartment</label>
+                              {{ form.apartment_address }}
+                          </div>
+                          <div class="form-field">
+                              <label for="city">Town/City*</label>
+                              {{ form.city }}
+                          </div>
+                          <div class="form-field">
+                              <label for="phone">Phone Number*</label>
+                              {{ form.phone_no }}
+                          </div>
+                          <div class="form-field">
+                              <label for="email">Email Address</label>
+                              {{ form.email }}
+                          </div>
+                          <div class="form-field checkbox-label">
+                              <input {% if form.same_shipping_address.value %}checked{% endif %} type="checkbox" class="custom-control-input" id="same_shipping_address">
+        
+        <label class="custom-control-label" for="same_shipping_address">Shipping address is the same as my billing address</label>
+                          </div>
+                          <div class="form-field checkbox-label">
+                              <input {% if form.save_info.value %}checked{% endif %} type="checkbox" class="custom-control-input" id="save-info">
+        <label class="custom-control-label" for="save-info">Save this information for next time</label>
+                          </div>
+                          <h4 class="mb-3">Payment</h4>
+
+                            <div class="d-block my-3">
+        	                    {% for value, name in form.fields.payment_option.choices %}
+                            <div class="custom-control custom-radio">
+                                <input id="{{ name }}" name="payment_option" value="{{ value }}" type="radio" class="custom-control-input"  required>
+                                <label class="custom-control-label" for="{{name}}">{{ name }}</label>
+                            </div>
+                            {% endfor %}
+                            </div>
+                            <button class="login-btn">Place Order</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 place_order">
+            {% for order_item in order.items.all %}
+              <div class="item-container">
+                  <div style="display: flex;">
+                      <img src="{{ order_item.item.image.url }}" alt="Item" class="item-image">
+                      <p>{{ order_item.item.title }}</p>
+                  </div>
+                  <p>${{ order_item.get_final_price }}</p>
+
+              </div>
+            {% endfor %}
+              <!-- Add more item containers here -->
+              <div class="subtotal">
+                  <p>Subtotal</p>
+                  <p>${{ order.get_total }}</p>
+              </div>
+              <div class="shipping">
+                  <p>Shipping</p>
+                  <p>Free</p>
+              </div>
+              <div class="total">
+                  <p>Total</p>
+                  <p>${{ order.get_total }}</p>
+              </div>
+             
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="footer" style="margin-top: 1vw;">
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-3 col-sm-12">
+                        <div class="footer_items fi1">
+                            <img src="{% static 'checkout/public/1nodeps600x600-3@2x.png' %}" alt="" class="footer_icon"><br>
+                            <p class="download">Download the app by clicking the link below :</p>
+                            <div class="image-flex-container">
+                                <img src="{% static 'checkout/public/image-1@2x.png' %}" alt="" class="play_store">
+                                <img src="{% static 'checkout/public/image-2@2x.png' %}" alt="" class="play_store">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-sm-12">
+                        <div class="footer_items fi2">
+                            <h2>Products</h2>
+                            <ul>
+                                <li>Rings</li>
+                                <li>Bracelets</li>
+                                <li>Earrings</li>
+                                <li>Pendant</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-2 col-sm-12">
+                        <div class="footer_items fi3">
+                            <h2>Information</h2>
+                            <ul>
+                                <li>About us</li>
+                                <li>Our Products</li>
+                                <li>Collection</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2 col-sm-12">
+                        <div class="footer_items fi4">
+                            <h2>Contact</h2>
+                            <p><i class="fa-solid fa-phone"></i>(406) 555-0120</p>
+                            <p><img src="{% static 'checkout/public/dashiconsemail.svg%' %}" alt=""> Silverjewel123@gmail.com</p>
+                            <p><img src="{% static 'chechout/public/frame-3.svg' %}" alt=""> 2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2 col-sm-12">
+                        <div class="footer_items social_icons fi5">
+                            <h2>Social Media</h2>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <img src="{% static 'checkout/public/vector8.svg' %}" alt="" class="vector-icon8">
+    <img src="{% static 'checkout/public/vector.svg' %}" alt="" class="vector-icon">
+    <script src="https://kit.fontawesome.com/40d666c88a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
 </html>

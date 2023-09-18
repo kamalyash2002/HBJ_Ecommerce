@@ -167,3 +167,20 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 STRIPE_PUBLIC_KEY = 'pk_test_lX3r6OMjOU2yzFsNSHq6belT00EY82kZmH'
 STRIPE_SECRET_KEY = 'sk_test_tn0CTDaIJHUJyAqhsf39cfsC00LNjsqDnb'
+
+
+
+
+# Email Sending
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'confirmationtest02@gmail.com'  # Your Gmail email address
+EMAIL_HOST_PASSWORD = 'lkrwumxpgrfdamqv '  # Your Gmail password or app password
+
+
+
+# for the razor pay
+RAZOR_KEY_ID = 'rzp_test_LSGLw6o2D7SANw'
+RAZOR_KEY_SECRET = 'DnKEUMqQXnN6sQEWXdOGOWWn'
