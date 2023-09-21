@@ -24,31 +24,25 @@ import string
 def create_ref_code():
     return ''.join(random.choices(string.ascii_lowercase + string.digits, k=20))
 
-## payment page view
-
-
-## order karne ke baad 
-
-
-class PaymentView(View):
-    def get(self, *args, **kwargs):
-        # order
-        order = Order.objects.get(user=self.request.user, ordered=False)
+def paymentnew(request):
+    if request.method == 'GET':
+        # Fetch the order
+        order = Order.objects.get(user=request.user, ordered=False)
         if order.billing_address:
             amount = int(order.get_total() * 100)
             context = {
-                'amount':amount,
+                'amount': amount,
                 'order': order,
                 'DISPLAY_COUPON_FORM': False,
             }
-            return render(self.request, "payment.html", context)
+            return render(request, "payment.html", context)
         else:
-            messages.warning(self.request, "You have not added a billing address")
+            messages.warning(request, "You have not added a billing address")
             return redirect("core:checkout")
-
-    def post(self, *args, **kwargs):
-        order = Order.objects.get(user=self.request.user, ordered=False)
-        amount = int(order.get_total * 100)  # Convert the amount to paise (Razorpay uses paise as the currency)
+    
+    if request.method == 'POST':
+        order = Order.objects.get(user=request.user, ordered=False)
+        amount = int(order.get_total() * 100)  # Convert the amount to paise (Razorpay uses paise as currency)
 
         # Initialize Razorpay client with your API Key and Secret Key
         razorpay_client = razorpay.Client(auth=("rzp_test_LSGLw6o2D7SANw", "DnKEUMqQXnN6sQEWXdOGOWWn"))
@@ -60,29 +54,86 @@ class PaymentView(View):
             'payment_capture': 1  # Auto-capture the payment
         })
 
-        # Save Razorpay order ID in your order model for reference
-         # create the payment
+        # Create a new Payment instance
         payment = Payment()
         payment.stripe_charge_id = razorpay_order['id']
-        payment.user = self.request.user
+        payment.user = request.user
         payment.amount = order.get_total()
         payment.save()
-        # assign the payment to the order
+
+        # Update the order to mark it as ordered and associate the payment
         order.ordered = True
         order.payment = payment
         order.razorpay_order_id = razorpay_order['id']
+        # order random id
+        order.ref_code = create_ref_code()
         order.save()
 
         context = {
             'razorpay_order_id': razorpay_order['id'],
             'amount': amount,
         }
-        return render(self.request, "order_conf.html", context)
-    
-# creating the successview
+        return render(request, "payment.html", context)
+
 @csrf_exempt
-def success_pay(request):
-    return render(request,'order_conf.html')
+@login_required
+def success(request):
+    if request.method == 'GET':
+        order = Order.objects.get(user=request.user, ordered=False)
+        context = {
+            'order':order,
+        }
+        return render(request,'order_conf.html', context)
+
+
+
+
+# class PaymentView(View):
+#     def get(self, *args, **kwargs):
+#         # order
+#         order = Order.objects.get(user=self.request.user, ordered=False)
+#         if order.billing_address:
+#             amount = int(order.get_total() * 100)
+#             context = {
+#                 'amount':amount,
+#                 'order': order,
+#                 'DISPLAY_COUPON_FORM': False,
+#             }
+#             return render(self.request, "payment.html", context)
+#         else:
+#             messages.warning(self.request, "You have not added a billing address")
+#             return redirect("core:checkout")
+
+#     def post(self, *args, **kwargs):
+#         order = Order.objects.get(user=self.request.user, ordered=False)
+#         amount = int(order.get_total * 100)  # Convert the amount to paise (Razorpay uses paise as the currency)
+
+#         # Initialize Razorpay client with your API Key and Secret Key
+#         razorpay_client = razorpay.Client(auth=("rzp_test_LSGLw6o2D7SANw", "DnKEUMqQXnN6sQEWXdOGOWWn"))
+
+#         # Create a Razorpay order
+#         razorpay_order = razorpay_client.order.create({
+#             'amount': amount,
+#             'currency': 'INR',  # Change this to your desired currency
+#             'payment_capture': 1  # Auto-capture the payment
+#         })
+
+#         # Save Razorpay order ID in your order model for reference
+#          # create the payment
+#         payment = Payment()
+#         payment.stripe_charge_id = razorpay_order['id']
+#         payment.user = self.request.user
+#         payment.amount = order.get_total()
+#         payment.save()
+#         order.razorpay_order_id = razorpay_order['id']
+#         order.save()
+
+#         context = {
+#             'razorpay_order_id': razorpay_order['id'],
+#             'amount': amount,
+#         }
+#         return render(self.request, "order_conf.html", context)
+    
 
 
 # home page class
@@ -179,9 +230,9 @@ class CheckoutView(View):
 
                 # add redirect to the selected payment option
                 if payment_option == 'C':
-                    return redirect('core:payment', payment_option='COD')
+                    return redirect('core:paymenttest')
                 elif payment_option == 'R':
-                    return redirect('core:payment', payment_option='Razorpay')
+                    return redirect('core:paymenttest')
                 else:
                     messages.warning(
                         self.request, "Invalid payment option select")
@@ -412,3 +463,6 @@ def contact_view(request):
             return render(request, 'contact.html')  # Redirect to the contact page or a thank-you page
 
     return render(request, 'contact.html')  # Replace 'contact.html' with your actual template name
+
+
+

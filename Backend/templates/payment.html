@@ -8,6 +8,7 @@
 </head>
 <body>
     <form action="{% url 'core:success' %}" method="POST">
+        {% csrf_token %}
         <script
             src="https://checkout.razorpay.com/v1/checkout.js"
             data-key="rzp_test_LSGLw6o2D7SANw" // Enter the Test API Key ID generated from Dashboard → Settings → API Keys

@@ -8,7 +8,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <link rel="stylesheet" href="{% static 'order_conf/css/styles.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gilda Display:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marmelad:wght@400&display=swap" />
@@ -27,7 +27,7 @@
                 <div class="heading">
                     <p class="hbp">HBP JEWELS</p>
                     <div class="tower_para">
-                        HAUTE BIJOUX <img src="{% static 'order_conf//public/1noDePS-600x600 2.png' %}" alt="" class="tower">BY
+                        HAUTE BIJOUX <img src="{% static 'order_conf/public/1noDePS-600x600 2.png' %}" alt="" class="tower">BY
                         PRIANCA
                     </div>
                     <p class="pure">Pure 92.5 Silver and Semi Precious Gemstones Jewellery</p>
@@ -53,7 +53,7 @@
                                         <a class="nav-link" href="#">About us</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Shop</a>
+                                        <a class="nav-link" href="shop">Shop</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">Contact us</a>
@@ -83,11 +83,11 @@
 
     <div class="container">
         <div class="order_done">
-            <p style="font-weight: 700; margin-top: 2vw;">Your Oder has been placed</p>
+            <p style="font-weight: 700; margin-top: 2vw;">Your Order has been placed</p>
 
             <img src="{% static 'order_conf/public/Tick.png' %}" alt="">
             <p>Thank you for your purchase !</p>
-            <p>Your Order ID is :12412341</p>
+            <p>Your Order ID is :{{order.ref_code}}</p>
 
             <div>
 

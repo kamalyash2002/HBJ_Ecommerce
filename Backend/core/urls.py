@@ -10,7 +10,7 @@ from .views import (
     OrderSummaryView,
     remove_single_item_from_cart,
     CheckoutView,
-    PaymentView,
+    # PaymentView,
     AddCouponView,
     RequestRefundView,
     CategoryView,
@@ -18,7 +18,9 @@ from .views import (
     Contactview,
     profile_view,
     contact_view,
-    success_pay
+    paymentnew,
+    success
+
 )
 from . import views
 
@@ -36,13 +38,14 @@ urlpatterns = [
     path('order-summary/', OrderSummaryView.as_view(), name='order-summary'),
     path('remove-item-from-cart/<slug>/', remove_single_item_from_cart,
          name='remove-single-item-from-cart'),
-    path('payment/<payment_option>/', PaymentView.as_view(), name='payment'),
+    # path('payment/<payment_option>/', PaymentView.as_view(), name='payment'),
     path('request-refund/', RequestRefundView.as_view(), name='request-refund'),
     path('about/', Aboutview.as_view(), name='about'),
     path('contact',Contactview.as_view(), name='contact'),
     path('profile/',views.profile_view, name = 'profile'),
     path('contact_view',views.contact_view, name ='contact_view'),
-    path('success', views.success_pay, name = 'success')
+    path('paymenttest',views.paymentnew, name = 'paymenttest'),
+    path('success',views.success, name = 'success')
     # path('account/login', views.login, name = "login"),
 ] 
 
